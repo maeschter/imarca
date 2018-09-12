@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html dir="ltr" lang="de-de">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Imarca Metadaten Editor</title>
+    <meta name="generator" content="Blue Griffon">
+    <meta name="created" content="00:00:00">
+    <meta name="changed" content="2018-02-08T22:00:02.125906250">
+    <style type="text/css">
+		h2.cjk { font-family: "Noto Sans CJK SC Regular" }
+		h2.ctl { font-family: "FreeSans" }
+		h3.cjk { font-family: "Noto Sans CJK SC Regular" }
+		h3.ctl { font-family: "FreeSans" }
+		h5.cjk { font-family: "Noto Sans CJK SC Regular" }
+		h5.ctl { font-family: "FreeSans" }
+		h4.cjk { font-family: "Noto Sans CJK SC Regular" }
+		h4.ctl { font-family: "FreeSans" }
+	</style>
+    <meta name="author" content="GT">
+  </head>
+  <body dir="ltr" lang="de-DE"><span style="font-family: Helvetica,Arial,sans-serif;">
+    </span>
+    <p><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;</span></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"></span>
+    <h1><span style="font-family: Helvetica,Arial,sans-serif;"><a name="metadataEditor"></a></span>Metadaten
+      bearbeiten</h1>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>In Bildern können Metadaten eingebettet sein oder eingebettet werden.</p>
+    <p>Der IPTC-Core Datensatz (IPTC = INTERNATIONAL PRESS TELECOMMUNICATIONS
+      COUNCIL) enthält wichtige Informationen für Weitergabe, Verkauf und
+      Archivierung des Bildes. Der Datensatz hält sich an IPTC Core
+      Specification Version 1.2 (Oktober 2014).<br>
+      Der IPTC-Contact Datensatz ist eine Erweiterung von IPTC-Core für
+      Kontaktdaten wie Adresse, Telefon und email. Er wird vom Editor zur Zeit
+      nicht unterstützt.</p>
+    <p>Der Exif-Datensatz (Exif = Exchangeable image file format) wird
+      gewöhnlich von einer Digitalkamera in das Bild geschrieben und enthält
+      aufnahmetechnische Daten. Der Datensatz ist gemäß Spezifikation Exif
+      Version 2.2 (April 2002) realisiert.</p>
+    <p>Der neuere XMP-Datensatz (XMP = Extensible Metadata Platform) erweitert
+      und umfasst IPTC und Exif Daten, wird aber vom Editor zur Zeit nicht
+      unterstützt.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <h2 class="western"><span style="font-family: Helvetica,Arial,sans-serif;"><a
+          name="metadataIptcCore"></a></span>IPTC-Core Datensatz</h2>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Alle Felder sind in einer zweispaltigen Tabelle enthalten. Die linke
+      Spalte zeigt alle Schlüsselwörter (Tags), in der rechten Spalte können die
+      zugehörigen Werte eingetragen werden.</p>
+    <p>Stellt man den Mauszeiger auf ein Feld der rechten Spalte, erscheint nach
+      kurzer Verzögerung ein Informationstext mit der originalen Beschreibung
+      des Feldinhaltes, als Hilfe zum Ausfüllen.</p>
+    <p>Auf der rechten Fensterseite sind eine Reihe von Schaltflächen für einige
+      spezielle Felder: </p>
+    <ul>
+      <li>
+        <p style="margin-bottom: 0cm">Einfügen von Ländername und zugehöriger
+          ISO-Code </p>
+      </li>
+      <li>
+        <p style="margin-bottom: 0cm">Einfügen von Datum und Uhrzeit </p>
+      </li>
+      <li>
+        <p style="margin-bottom: 0cm">Genre, Scene Code und Subject Code öffnen
+          die zugehörenden Listen auf der Webseite der IPTC. </p>
+      </li>
+      <li>
+        <p style="margin-bottom: 0cm">Einfügen des Copyright-Zeichens </p>
+      </li>
+      <li>
+        <p style="margin-bottom: 0cm">Löschen aller Felder </p>
+      </li>
+      <li>
+        <p>Felder an Hand einer zuvor erstellten Vorlage ausfüllen </p>
+      </li>
+    </ul>
+    <p style="margin-bottom: 0cm">Die Erstellung einer <a href="#metadataIptcTemplate">Vorlage</a>
+      wird im nächsten Abschnitt beschrieben.</p>
+    <p style="margin-bottom: 0cm"><br>
+    </p>
+    <div style="margin-left: 80px;"> <span style="font-family: Helvetica,Arial,sans-serif;">
+      </span> <img src="images-de/metadataEditorIPTC.png" alt="metadataEditorIPTC"
+        title="metadataEditorIPTC"> <span style="font-family: Helvetica,Arial,sans-serif;">
+      </span> </div>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Im Feld "Caption, Description" kann ein Text mit bis zu 2000 Zeichen
+      stehen, der eine kurze Zusammenfassung und Beschreibung enthalten soll.</p>
+    <p>Im Metadateneditor können mehrere Dateien geöffnet werden. Der Datensatz
+      der ersten Datei wird gelesen und das Vorschaubild unter der Titelleiste
+      angezeigt. Die Tasten am unteren Fensterrand navigieren durch die
+      geöffneten Dateien. Die jeweils aktive wird durch Vorschaubild und Name
+      erkenntlich.</p>
+    <p><img src="images-de/x_tip.png" alt="tip" title="tip"> Wenn eine <a href="#metadataIptcTemplate">Vorlage</a>
+      zur Verfügung steht, wird ihr Name in der Titelleiste angezeigt. </p>
+    <p><img src="images-de/x_tip.png" alt="tip" title="tip"> Der Editor
+      speichert nicht automatisch. Sie müssen Ihre Änderungen speichern, bevor
+      Sie den nächsten oder vorhergehenden Datensatz lesen oder die Daten sind
+      verloren.</p>
+    <p><img src="images-de/x_tip.png" alt="tip" title="tip"> Die Schaltfläche
+      "Speichern" schreibt immer <i>IPTC und Exif</i> Datensatz in die Datei.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <h2 class="western"><span style="font-family: Helvetica,Arial,sans-serif;"><a
+          name="metadataIptcTemplate"></a></span>IPTC-Vorlage</h2>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Die Vorlage soll die Handhabung mehrerer Dateien mit gleichem oder
+      ähnlichem Datensatz erleichtern.</p>
+    <p>Die Vorlage verwendet die gleiche Tabelle wie der IPTC Datensatz,
+      allerdings haben die Schaltflächen am unteren Fensterrand eine andere
+      Bedeutung. Die vier rechten Schaltflächen dienen der Verwaltung der
+      Vorlage. Die linke Schaltfläche setzt die aktuell geöffnete Vorlage als
+      Muster für den IPTC-Editor bei Drücken der Schaltfläche „Vorlage anwenden.</p>
+    <div style="margin-left: 80px;"><img src="images-de/metadataEditorIPTCTemplate.png"
+        alt="metadataEditorIPTCTemplate" title="metadataEditorIPTCTemplate"> <span
+        style="font-family: Helvetica,Arial,sans-serif;"> </span> <span style="font-family: Helvetica,Arial,sans-serif;">
+      </span> </div>
+    <p><img src="images-de/x_tip.png" alt="tip" title="tip">&nbsp;Wozu dient die
+      Vorlage?</p>
+    <p> Angenommen Sie möchten einige Bilder mit IPTC-Daten versehen, bei denen
+      nur wenige Felder von Bild zu Bild differieren, die Mehrzahl der Felder
+      aber in jedem Bild den gleichen Inhalt haben. Dann ist die Vorlage das
+      geeignete Mittel, um Tipparbeit zu sparen. Füllen Sie die Vorlage mit den
+      unveränderlichen Daten, die in jedem Bild enthalten sein müssen und
+      speichern sie ab.<br>
+      Danach betätigen Sie die Fläche „Anwenden“ und schließen die Vorlage.</p>
+    <p>Öffnen das IPTC Fenster mit den gleichen markierten Bildern. In der
+      Titelleiste wird der Name der Vorlage angezeigt.<br>
+      Drücken Sie „Vorlage anwenden“, worauf die Felder gefüllt werden und
+      speichern Sie ab. Dann lesen Sie das nächste Bild, wenden die Vorlage an
+      und speichern, bis alle Bilder bearbeitet sind. Danach können Sie mit
+      „Vorhergehende lesen“ die noch ausstehenden Daten eingeben und speichern.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <h2 class="western"><span style="font-family: Helvetica,Arial,sans-serif;"><a
+          name="metadataExif"></a></span>Exif-Datensatz</h2>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Alle Felder des Datensatzes sind in einer Tabelle mit zwei Spalten
+      angelegt und zeigen vorhandene Werte an, können aber nicht verändert
+      werden. Es ist auch nicht möglich Werte hinzuzufügen, aber der komplette
+      Datensatz kann gelöscht werden.</p>
+    <div style="margin-left: 80px;"><img src="images-de/metadataEditorEXIF.png"
+        alt="metadataEditorEXIF" title="metadataEditorEXIF"> <span style="font-family: Helvetica,Arial,sans-serif;">
+      </span> </div>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>In den Anwender-Kommentar kann ein beliebiger Text eingetragen werden.
+      Dies ist das einzige editierbare Feld in den Exif Daten.</p>
+    <p>Mit den Schaltflächen rechts besteht die Möglichkeit den Ort der
+      Bildaufnahme in unterschiedlichen Karten darstellen zu lassen, sofern
+      GPS-Koordinaten in den Exif Daten enthalten sind. Fehlen die
+      GPS-Koordinaten sind die Schaltflächen gesperrt.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;</span></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+  </body>
+</html>

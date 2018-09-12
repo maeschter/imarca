@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>org.kbv.imageMetadata</namespace>
+    <virtualFolder>help</virtualFolder>
+    <filterSection>
+        <toc>
+             <section title="Metadaten bearbeiten" ref="kbvMetadata-de.html#metadataEditor">
+                 <section title="IPTC-Core Datensatz" ref="kbvMetadata-de.html#metadataIptcCore"/>
+                 <section title="IPTC-Vorlage" ref="kbvMetadata-de.html#metadataIptcTemplate"/>
+                 <section title="Exif-Datensatz" ref="kbvMetadata-de.html#metadataExif"/>
+             </section>
+        </toc>
+        <files>
+            <file>kbvMetadata-de.html</file>
+            <file>images-de/x_tip.png</file>
+            <file>images-de/metadataEditorEXIF.png</file>
+            <file>images-de/metadataEditorIPTC.png</file>
+            <file>images-de/metadataEditorIPTCTemplate.png</file>
+        </files>
+    </filterSection>
+</QtHelpProject>
