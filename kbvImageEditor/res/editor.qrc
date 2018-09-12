@@ -1,1 +1,31 @@
-
+<RCC>
+    <qresource prefix="/">
+        <file>icons/app-exit.png</file>
+        <file>icons/zoom-in.png</file>
+        <file>icons/zoom-original.png</file>
+        <file>icons/zoom-out.png</file>
+        <file>icons/document-print.png</file>
+        <file>icons/document-save-as.png</file>
+        <file>icons/document-save.png</file>
+        <file>icons/object-flip-horizontal.png</file>
+        <file>icons/object-flip-vertical.png</file>
+        <file>icons/object-rotate-left.png</file>
+        <file>icons/object-rotate-right.png</file>
+        <file>icons/object-rotate-180deg.png</file>
+        <file>icons/object-crop.png</file>
+        <file>icons/dialog-error.png</file>
+        <file>icons/dialog-information.png</file>
+        <file>icons/dialog-question.png</file>
+        <file>icons/dialog-warning.png</file>
+        <file>icons/edit-redo.png</file>
+        <file>icons/edit-undo.png</file>
+        <file>icons/folder.png</file>
+        <file>icons/kbv-crown.png</file>
+        <file>icons/kbv-percent.png</file>
+        <file>icons/kbv-pixel.png</file>
+        <file>icons/kbv-triangle-left.png</file>
+        <file>icons/kbv-triangle-right.png</file>
+        <file>icons/kbv-batch-process.png</file>
+        <file>icons/button-cancel.png</file>
+    </qresource>
+</RCC>
