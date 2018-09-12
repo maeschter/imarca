@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>org.kbv.core</namespace>
+    <virtualFolder>help</virtualFolder>
+    <filterSection>
+        <toc>
+            <section title="Imarca" ref="kbvCore-de.html#title"></section>
+            <section title="Main window" ref="kbvCore-en.html#mainWindow">
+                <section title="Dirs and files" ref="kbvCore-en.html#dirsAndFiles"/>
+                <section title="Collections and albums" ref="kbvCore-en.html#collectionsAndAlbums"/>
+                <section title="Search results" ref="kbvCore-en.html#searchResult"/>
+                <section title="Menus" ref="kbvCore-en.html#mainMenus"/>
+                <section title="Commando line" ref="kbvCore-en.html#cmdLine"/>
+            </section>
+            <section title="Image viewer" ref="kbvCore-en.html#imageViewer"></section>
+            <section title="Create and edit collections" ref="kbvCore-en.html#createAndEditCollections">
+                <section title="What is an album" ref="kbvCore-en.html#whatIsAnAlbum"/>
+                <section title="What is a collection" ref="kbvCore-en.html#whatIsACollection"/>
+                <section title="Open and close albums and collections" ref="kbvCore-en.html#openAndCloseCollections"/>
+                <section title="How to create a new database" ref="kbvCore-de.html#menuCollectionDatabaseCreate"/>
+                <section title="Display database attributes" ref="kbvCore-de.html#menuCollectionDatabaseProperties"/>
+                <section title="How to read in a collection" ref="kbvCore-de.html#menuCollectionRead"/>
+                <section title="Refresh a collection or an album" ref="kbvCore-de.html#menuCollectionRefresh"/>
+                <section title="Integrity check (CRC-Check)" ref="kbvCore-de.html#menuCollectionCRC"/>
+                <section title="Rename a database" ref="kbvCore-en.html#menuCollectionDatabaseRename"/>
+                <section title="Remove a database" ref="kbvCore-en.html#menuCollectionDatabaseRemove"/>
+                <section title="Insert or renove collection branches" ref="kbvCore-en.html#menuCollectionBranchInsertRemove"/>
+                <section title="Edir records" ref="kbvCore-de.html#menuCollectionDatasetEdit"/>
+                <section title="Open an external collection" ref="kbvCore-de.html#menuCollectionOpen"/>
+                <section title="Import an external collection" ref="kbvCore-de.html#menuCollectionImport"/>
+                <section title="Export a collection" ref="kbvCore-de.html#menuCollectionExport"/>
+            </section>
+            <section title="Search" ref="kbvCore-en.html#Search"></section>
+        </toc>
+        <files>
+            <file>kbvCore-en.html</file>
+            <file>images-en/imarca.png</file>
+            <file>images-en/x_tip.png</file>
+            <file>images-en/collectionCrcCheck.png</file>
+            <file>images-en/collectionCrcSettings.png</file>
+            <file>images-en/collectionDataset.png</file>
+            <file>images-en/collectionDBAttributes.png</file>
+            <file>images-en/collectionDBNew.png</file>
+            <file>images-en/collectionRemove.png</file>
+            <file>images-en/collectionRename.png</file>
+            <file>images-en/collectionExport.png</file>
+            <file>images-en/collectionImport.png</file>
+            <file>images-en/mainWindow.png</file>
+            <file>images-en/mainWindowCollectionTree.png</file>
+            <file>images-en/mainWindowSortInfoBar.png</file>
+            <file>images-en/mainWindowTabCollections.png</file>
+            <file>images-en/mainWindowTabSearch.png</file>
+            <file>images-en/menuInfoAbout.png</file>
+            <file>images-en/menuOptionsGeneral.png</file>
+            <file>images-en/menuOptionsSlideShow.png</file>
+            <file>images-en/menuOptionsView.png</file>
+            <file>images-en/menuRenameMultiple.png</file>
+            <file>images-en/menuRenameSingle.png</file>
+            <file>images-en/searchDialogDate.png</file>
+            <file>images-en/searchDialogKeyword.png</file>
+            <file>images-en/searchDialogPath.png</file>
+        </files>
+    </filterSection>
+</QtHelpProject>
