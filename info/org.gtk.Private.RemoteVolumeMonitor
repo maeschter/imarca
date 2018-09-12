@@ -1,0 +1,507 @@
+
+https://github.com/GNOME/gvfs/blob/master/monitor/proxy/dbus-interfaces.xml
+--------------------------------------------------------------------------------
+
+<!DOCTYPE node PUBLIC
+"-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+"http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<!--
+Copyright (C) 2011 Red Hat, Inc.
+This library is free software; you can redistribute https://git.gnome.org/browse/gvfs/tree/commonit and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2 of the License, or (at your option) any later version.
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Lesser General Public License for more details.
+You should have received a copy of the GNU Lesser General
+Public License along with this library; if not, write to the
+Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+Boston, MA 02110-1301, USA.
+Author: Tomas Bzatek <tbzatek@redhat.com>
+-->
+<node name="/" xmlns:doc="http://www.freedesktop.org/dbus/1.0/doc.dtd">
+<interface name='org.gtk.Private.RemoteVolumeMonitor'>
+<!-- GIO side -->
+<signal name="DriveChanged">
+<arg type='s' name='dbus_name'/>
+<arg type='s' name='id'/>
+<arg type='(ssssbbbbbbbbuasa{ss}sa{sv})' name='drive'/>
+</signal>
+<signal name="DriveConnected">
+<arg type='s' name='dbus_name'/>
+<arg type='s' name='id'/>
+<arg type='(ssssbbbbbbbbuasa{ss}sa{sv})' name='drive'/>
+</signal>
+<signal name="DriveDisconnected">
+<arg type='s' name='dbus_name'/>
+<arg type='s' name='id'/>https://git.gnome.org/browse/gvfs/tree/common
+<arg type='(ssssbbbbbbbbuasa{ss}sa{sv})' name='drive'/>
+</signal>
+<signal name="DriveEjectButton">
+<arg type='s' name='dbus_name'/>
+<arg type='s' name='id'/>
+<arg type='(ssssbbbbbbbbuasa{ss}sa{sv})' name='drive'/>
+</signal>
+<signal name="DriveStopButton">
+<arg type='s' name='dbus_name'/>
+<arg type='s' name='id'/>
+<arg type='(ssssbbbbbbbbuasa{ss}sa{sv})' name='drive'/>
+</signal>
+<signal name="VolumeChanged">
+<arg type='s' name='dbus_name'/>
+<arg type='s' name='id'/>
+<arg type='(ssssssbbssa{ss}sa{sv})' name='volume'/>
+</signal>
+<signal name="VolumeAdded">
+<arg type='s' name='dbus_name'/>
+<arg type='s' name='id'/>
+<arg type='(ssssssbbssa{ss}sa{sv})' name='volume'/>
+</signal>
+<signal name="VolumeRemoved">
+<arg type='s' name='dbus_name'/>
+<arg type='s' name='id'/>
+<arg type='(ssssssbbssa{ss}sa{sv})' name='volume'/>
+</signal>
+<signal name="MountChanged">
+<arg type='s' name='dbus_name'/>
+<arg type='s' name='id'/>
+<arg type='(ssssssbsassa{sv})' name='mount'/>
+</signal>
+<signal name="MountAdded">
+<arg type='s' name='dbus_name'/>
+<arg type='s' name='id'/>
+<arg type='(ssssssbsassa{sv})' name='mount'/>
+</signal>
+<signal name="MountPreUnmount">
+<arg type='s' name='dbus_name'/>
+<arg type='s' name='id'/>
+<arg type='(ssssssbsassa{sv})' name='mount'/>
+</signal>
+<signal name="MountRemoved">
+<arg type='s' name='dbus_name'/>
+<arg type='s' name='id'/>
+<arg type='(ssssssbsassa{sv})' name='mount'/>
+</signal>
+<signal name="MountOpAskPassword">
+<arg type='s' name='dbus_name'/>
+<arg type='s' name='id'/>
+<arg type='s' name='message_to_show'/>
+<arg type='s' name='default_user'/>
+<arg type='s' name='default_domain'/>
+<arg type='u' name='flags'/>
+</signal>
+<signal name="MountOpAskQuestion">
+<arg type='s' name='dbus_name'/>
+<arg type='s' name='id'/>
+<arg type='s' name='message_to_show'/>
+<arg type='as' name='choices'/>
+</signal>
+<signal name="MountOpShowProcesses">
+<arg type='s' name='dbus_name'/>
+<arg type='s' name='id'/>
+<arg type='s' name='message_to_show'/>
+<arg type='ai' name='pid'/>
+<arg type='as' name='choices'/>
+</signal>
+<signal name="MountOpShowUnmountProgress">
+<arg type='s' name='dbus_name'/>
+<arg type='s' name='id'/>
+<arg type='s' name='message_to_show'/>
+<arg type='x' name='time_left'/>
+<arg type='x' name='bytes_left'/>
+</signal>
+<signal name="MountOpAborted">
+<arg type='s' name='dbus_name'/>
+<arg type='s' name='id'/>
+</signal>
+
+<!-- Particular volume monitor implementations -->
+<method name="IsSupported">
+<arg type='b' name='is_supported' direction='out'/>
+</method>
+<method name="List">
+<arg type='a(ssssbbbbbbbbuasa{ss}sa{sv})' name='drives' direction='out'/>
+<arg type='a(ssssssbbssa{ss}sa{sv})' name='volumes' direction='out'/>
+<arg type='a(ssssssbsassa{sv})' name='mounts' direction='out'/>
+</method>
+<method name="CancelOperation">
+<arg type='s' name='cancellation_id' direction='in'/>
+<arg type='b' name='was_cancelled' direction='out'/>
+</method>
+<method name="MountUnmount">
+<arg type='s' name='id' direction='in'/>
+<arg type='s' name='cancellation_id' direction='in'/>
+<arg type='u' name='unmount_flags' direction='in'/>
+<arg type='s' name='mount_op_id' direction='in'/>
+</method>
+<method name="VolumeMount">
+<arg type='s' name='id' direction='in'/>
+<arg type='s' name='cancellation_id' direction='in'/>
+<arg type='u' name='mount_flags' direction='in'/>
+<arg type='s' name='mount_op_id' direction='in'/>
+</method>
+<method name="DriveEject">
+<arg type='s' name='id' direction='in'/>
+<arg type='s' name='cancellation_id' direction='in'/>
+<arg type='u' name='unmount_flags' direction='in'/>
+<arg type='s' name='mount_op_id' direction='in'/>
+</method>
+<method name="DrivePollForMedia">
+<arg type='s' name='id' direction='in'/>
+<arg type='s' name='cancellation_id' direction='in'/>
+</method>
+<method name="DriveStart">
+<arg type='s' name='id' direction='in'/>
+<arg type='s' name='cancellation_id' direction='in'/>
+<arg type='u' name='flags' direction='in'/>
+<arg type='s' name='mount_op_id' direction='in'/>
+</method>
+<method name="DriveStop">
+<arg type='s' name='id' direction='in'/>
+<arg type='s' name='cancellation_id' direction='in'/>
+<arg type='u' name='unmount_flags' direction='in'/>
+<arg type='s' name='mount_op_id' direction='in'/>
+</method>
+<method name="MountOpReply">
+<arg type='s' name='mount_op_id' direction='in'/>
+<arg type='i' name='result' direction='in'/>
+<arg type='s' name='user_name' direction='in'/>
+<arg type='s' name='domain' direction='in'/>
+<arg type='s' name='encoded_password' direction='in'/>
+<arg type='i' name='password_save' direction='in'/>
+<arg type='i' name='choice' direction='in'/>
+<arg type='b' name='anonymous' direction='in'/>
+</method>
+</interface>
+</node>
+
+/* Device structure
+ * <arg type='ssssbbbbbbbbuasa{ss}sa{sv}' name='drive' direction='out'/>
+ * string               id
+ * string               name
+ * string               gicon_data
+ * string               symbolic_gicon_data
+ * boolean              can-eject
+ * boolean              can-poll-for-media
+ * boolean              has-media
+ * boolean              is-media-removable
+ * boolean              is-media-check-automatic
+ * boolean              can-start
+ * boolean              can-start-degraded
+ * boolean              can-stop
+ * uint32               start-stop-type
+ * array:string         volume-ids
+ * dict:string->string  identifiers
+ * string               sort_key
+ * a{sv}                expansion
+*/
+
+/* Volume structure
+ * <arg type='ssssssbbssa{ss}sa{sv}' name='volume' direction='out'/>
+ * string               id
+ * string               name
+ * string               gicon_data
+ * string               symbolic_gicon_data
+ * string               uuid
+ * string               activation_uri
+ * boolean              can-mount
+ * boolean              should-automount
+ * string               drive-id
+ * string               mount-id
+ * dict:string->string  identifiers
+ * string               sort_key
+ * a{sv}                expansion
+*/
+
+/* Mount structure
+ * <arg type='ssssssbsassa{sv}' name='mount' direction='out'/>
+ * string               id
+ * string               name
+ * string               gicon_data
+ * string               symbolic_gicon_data
+ * string               uuid
+ * string               root_uri
+ * boolean              can-unmount
+ * string               volume-id
+ * array:string         x-content-types
+ * string               sort_key
+ * a{sv}                expansion
+*/
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Beispiele (zwei Geräte gleichen Namens, wobei %20 durch Leerzeichen ersetzt wurde):
+Mount liefert die Mountpoints mit Leerzeichen, der Volumemonitor mit %20
+
+KbvDBusConnection::volumeMounted "ARCHOS 7" "file:///media/ARCHOS%207" 
+KbvDirModel::mountDevice label mountPoint icon "ARCHOS 7" "/media/ARCHOS 7" 
+". GThemedIcon drive-removable-media-usb drive-removable-media drive-removable drive"
+
+KbvDBusConnection::volumeMounted "ARCHOS 7" "file:///media/ARCHOS%207_" 
+KbvDirModel::mountDevice label mountPoint icon "ARCHOS 7" "/media/ARCHOS 7_" 
+". GThemedIcon drive-removable-media-usb drive-removable-media drive-removable drive"
+
+KbvDBusConnection::volumeRemoved "ARCHOS 7" "file:///media/ARCHOS%207" 
+KbvDirModel::unmountDevice label mountPoint "ARCHOS 7" "/media/ARCHOS 7" 
+ 
+KbvDBusConnection::volumeRemoved "ARCHOS 7" "file:///media/ARCHOS%207_" 
+KbvDirModel::unmountDevice label mountPoint "ARCHOS 7" "/media/ARCHOS 7_" 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Geräte gleichen Namens werden als unterschiedliche Geräte mit unterschiedlichen Mountpoints eingehängt:
+
+ARCHOS 7  /dev/sdh   "file:///media/ARCHOS%207"   tablet
+ARCHOS 7  /dev/sdi1  "file:///media/ARCHOS%207_"  usb stick
+
+signal sender=:1.38 -> dest=(null destination) serial=167 path=/org/gtk/Private/RemoteVolumeMonitor;
+ interface=org.gtk.Private.RemoteVolumeMonitor; member=MountAdded
+   string "org.gtk.Private.GduVolumeMonitor"
+   string "0xed4f00"
+   struct {
+      string "0xed4f00"
+      string "ARCHOS 7"
+      string ". GThemedIcon drive-removable-media-usb drive-removable-media drive-removable drive"
+      string ""
+      string "file:///media/ARCHOS%207"
+      boolean true
+      string "0xe93610"
+      array [
+         string "x-content/image-dcf"
+      ]
+      string ""
+      array [
+      ]
+   }
+
+signal sender=:1.38 -> dest=(null destination) serial=176 path=/org/gtk/Private/RemoteVolumeMonitor; 
+interface=org.gtk.Private.RemoteVolumeMonitor; member=MountAdded
+   string "org.gtk.Private.GduVolumeMonitor"
+   string "0xef5000"
+   struct {
+      string "0xef5000"
+      string "ARCHOS 7"
+      string ". GThemedIcon drive-removable-media-usb drive-removable-media drive-removable drive"
+      string ""
+      string "file:///media/ARCHOS%207_"
+      boolean true
+      string "0xe933d0"
+      array [
+      ]
+      string ""
+      array [
+      ]
+   }
+
+USB-Stick 54A5-8C37 ############################################################ (sssssbsassa{sv})
+
+Das erste Argument kann sein:
+- string "org.gtk.Private.GduVolumeMonitor" (deprecated)
+- string "org.gtk.Private.UDisks2VolumeMonitor"
+
+signal sender=:1.37 -> dest=(null destination) serial=34 path=/org/gtk/Private/RemoteVolumeMonitor; 
+interface=org.gtk.Private.RemoteVolumeMonitor; member=MountAdded
+   string "org.gtk.Private.GduVolumeMonitor"
+   string "0x21b69c0"
+   struct {                 //type='(sssssbsas)' name='Mount'
+      string "0x21b69c0"
+      string "1,0 GB-Dateisystem"
+      string ". GThemedIcon drive-removable-media-usb drive-removable-media drive-removable drive"
+      string ""                             //icon-string
+      string "file:///media/54A5-8C37"
+      boolean true
+      string "0x21752b0"
+      array [
+      ]
+      string ""
+      array [
+      ]
+   }
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+signal sender=:1.37 -> dest=(null destination) serial=39 path=/org/gtk/Private/RemoteVolumeMonitor; 
+interface=org.gtk.Private.RemoteVolumeMonitor; member=MountRemoved
+   string "org.gtk.Private.GduVolumeMonitor"
+   string "0x21b69c0"
+   struct {
+      string "0x21b69c0"
+      string "1,0 GB-Dateisystem"
+      string ". GThemedIcon drive-removable-media-usb drive-removable-media drive-removable drive"
+      string ""
+      string "file:///media/54A5-8C37"
+      boolean true
+      string ""
+      array [
+      ]
+      string ""
+      array [
+      ]
+   }
+
+USB-Stick GT3 ##################################################################
+
+signal sender=:1.37 -> dest=(null destination) serial=82 path=/org/gtk/Private/RemoteVolumeMonitor; 
+interface=org.gtk.Private.RemoteVolumeMonitor; member=MountAdded
+   string "org.gtk.Private.GduVolumeMonitor"
+   string "0x21b6c00"
+   struct {
+      string "0x21b6c00"
+      string "GT3"
+      string ". GThemedIcon drive-removable-media-usb drive-removable-media drive-removable drive"
+      string ""
+      string "file:///media/GT3"
+      boolean true
+      string "0x2175460"
+      array [
+      ]
+      string ""
+      array [
+      ]
+   }
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+signal sender=:1.37 -> dest=(null destination) serial=103 path=/org/gtk/Private/RemoteVolumeMonitor; 
+interface=org.gtk.Private.RemoteVolumeMonitor; member=MountRemoved
+   string "org.gtk.Private.GduVolumeMonitor"
+   string "0x21b6cc0"
+   struct {
+      string "0x21b6cc0"
+      string "GT3"
+      string ". GThemedIcon drive-removable-media-usb drive-removable-media drive-removable drive"
+      string ""
+      string "file:///media/GT3"
+      boolean true
+      string ""
+      array [
+      ]
+      string ""
+      array [
+      ]
+   }
+
+
+XTASY Cam ######################################################################
+usb device
+signal sender=:1.37 -> dest=(null destination) serial=108 path=/org/gtk/Private/RemoteVolumeMonitor; 
+interface=org.gtk.Private.RemoteVolumeMonitor; member=MountAdded
+   string "org.gtk.Private.GduVolumeMonitor"
+   string "0x21b6d80"
+   struct {
+      string "0x21b6d80"
+      string "GT3"
+      string ". GThemedIcon drive-removable-media-usb drive-removable-media drive-removable drive"
+      string ""
+      string "file:///media/GT3"
+      boolean true
+      string "0x2175580"
+      array [
+      ]
+      string ""
+      array [
+      ]
+   }
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+signal sender=:1.37 -> dest=(null destination) serial=114 path=/org/gtk/Private/RemoteVolumeMonitor; 
+interface=org.gtk.Private.RemoteVolumeMonitor; member=MountRemoved
+   string "org.gtk.Private.GduVolumeMonitor"
+   string "0x21b6d80"
+   struct {
+      string "0x21b6d80"
+      string "GT3"
+      string ". GThemedIcon drive-removable-media-usb drive-removable-media drive-removable drive"
+      string ""
+      string "file:///media/GT3"
+      boolean true
+      string ""
+      array [
+      ]
+      string ""
+      array [
+      ]
+   }
+
+ARCHOS 7 #######################################################################
+usb device
+signal sender=:1.38 -> dest=(null destination) serial=95 path=/org/gtk/Private/RemoteVolumeMonitor; 
+interface=org.gtk.Private.RemoteVolumeMonitor; member=MountAdded
+   string "org.gtk.Private.GduVolumeMonitor"
+   string "0xed4b40"
+   struct {
+      string "0xed4b40"
+      string "ARCHOS 7"
+      string ". GThemedIcon drive-removable-media-usb drive-removable-media drive-removable drive"
+      string ""
+      string "file:///media/ARCHOS%207"
+      boolean true
+      string "0xe933d0"
+      array [
+         string "x-content/image-dcf"
+      ]
+      string ""
+      array [
+      ]
+   }
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+signal sender=:1.38 -> dest=(null destination) serial=80 path=/org/gtk/Private/RemoteVolumeMonitor; 
+interface=org.gtk.Private.RemoteVolumeMonitor; member=MountRemoved
+   string "org.gtk.Private.GduVolumeMonitor"
+   string "0xed4a80"
+   struct {
+      string "0xed4a80"
+      string "ARCHOS 7"
+      string ". GThemedIcon drive-removable-media-usb drive-removable-media drive-removable drive"
+      string ""
+      string "file:///media/ARCHOS%207"
+      boolean true
+      string ""
+      array [
+         string "x-content/image-dcf"
+      ]
+      string ""
+      array [
+      ]
+   }
+
+USB-Stick GT A #################################################################
+
+signal sender=:1.38 -> dest=(null destination) serial=115 path=/org/gtk/Private/RemoteVolumeMonitor;
+interface=org.gtk.Private.RemoteVolumeMonitor; member=MountAdded
+   string "org.gtk.Private.GduVolumeMonitor"
+   string "0xed4cc0"
+   struct {
+      string "0xed4cc0"
+      string "GT A"
+      string ". GThemedIcon drive-removable-media-usb drive-removable-media drive-removable drive"
+      string ""
+      string "file:///media/GT%20A"
+      boolean true
+      string "0xe934f0"
+      array [
+      ]
+      string ""
+      array [
+      ]
+   }
+
+signal sender=:1.38 -> dest=(null destination) serial=121 path=/org/gtk/Private/RemoteVolumeMonitor;
+interface=org.gtk.Private.RemoteVolumeMonitor; member=MountRemoved
+   string "org.gtk.Private.GduVolumeMonitor"
+   string "0xed4cc0"
+   struct {
+      string "0xed4cc0"
+      string "GT A"
+      string ". GThemedIcon drive-removable-media-usb drive-removable-media drive-removable drive"
+      string ""
+      string "file:///media/GT%20A"
+      boolean true
+      string ""
+      array [
+      ]
+      string ""
+      array [
+      ]
+   }
+

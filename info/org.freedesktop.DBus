@@ -1,0 +1,24 @@
+The D-Bus bus server daemon provides one special
+interface  org.freedesktop.DBus
+org/freedesktop/DBus
+
+
+service    org.gtk.vfs.Daemon
+interface  org.gtk.vfs.MountTracker
+path       /org/gtk/vfs/mounttracker
+signals    ListMounts, Mounted, Unounted
+           (gvfs-1.12.1: listMounts, mounted, unmounted)
+
+
+service    org.gtk.Private.GduVolumeMonitor
+interface  org.gtk.Private.RemoteVolumeMonitor
+path       /org/gtk/Private/RemoteVolumeMonitor
+signals    List, MountAdded, MountRemoved
+
+
+service    org.gtk.Private.UDisk2VolumeMonitor
+interface  org.gtk.Private.RemoteVolumeMonitor
+path       /org/gtk/Private/RemoteVolumeMonitor
+signals    MountAdded, MountRemoved
+
+GPhoto2
