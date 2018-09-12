@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html dir="ltr" lang="de-de">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Imarca Bildbearbeitung</title>
+    <meta name="generator" content="Blue Griffon">
+    <meta name="created" content="00:00:00">
+    <meta name="changed" content="2018-02-08T22:00:02.125906250">
+    <style type="text/css">
+		h2.cjk { font-family: "Noto Sans CJK SC Regular" }
+		h2.ctl { font-family: "FreeSans" }
+		h3.cjk { font-family: "Noto Sans CJK SC Regular" }
+		h3.ctl { font-family: "FreeSans" }
+		h5.cjk { font-family: "Noto Sans CJK SC Regular" }
+		h5.ctl { font-family: "FreeSans" }
+		h4.cjk { font-family: "Noto Sans CJK SC Regular" }
+		h4.ctl { font-family: "FreeSans" }
+	</style>
+    <meta name="author" content="GT">
+  </head>
+  <body dir="ltr" lang="de-DE"><br>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;</span></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"></span><span style="font-family: Helvetica,Arial,sans-serif;"></span><span
+      style="font-family: Helvetica,Arial,sans-serif;"></span><span style="font-family: Helvetica,Arial,sans-serif;"></span>
+    <h1 style="page-break-before: always"><span style="font-family: Helvetica,Arial,sans-serif;"><a
+          name="imageEditor"></a> </span>Bilder bearbeiten</h1>
+    <p>Imarca bietet zwei unterschiedliche Editoren um Bilder zu bearbeiten:</p>
+    <p> Mit dem <a href="#singleEditor">Bildeditor</a> kann man eines oder
+      mehrere Bilder einzeln und nacheinander bearbeiten. Die Änderungen werden
+      individuell auf jedes Bild angewendet.</p>
+    <p>Mit der <a href="#batchEditor">Stapelverarbeitung</a> können eines oder
+      mehrere Bilder in einem Durchgang einer Reihe von Anweisungen wie Drehen,
+      Beschneiden, Ändern der Abmessungen oder Umwandeln des Dateiformats
+      unterzogen werden. Zu Beginn der Stapelverarbeitung werden die gewünschten
+      Anweisungen vorgegeben und danach auf alle Bilder in gleicher Form
+      angewendet.</p>
+    <h2><a name="singleEditor"></a>Bildeditor</h2>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p style="font-weight: normal">Über Menü &lt;Bild | Bearbeiten&gt; oder
+      &lt;F7&gt; werden ein oder mehrere markierte Vorschaubilder im Bildeditor
+      geöffnet. Das Bild wird immer in natürlicher Größe dargestellt. Wenn es
+      inklusive Fensterrahmen auf die Arbeitsfläche passt, wird es ohne
+      Rollbalken dargestellt.</p>
+    <div style="margin-left: 80px;"><img src="images-de/imageEditorMainWindow.png"
+        alt="imageEditorMainWindow" title="imageEditorMainWindow"> <span style="font-family: Helvetica,Arial,sans-serif;">
+      </span> </div>
+    <p style="font-weight: normal">Wenn mehrere Bilder geöffnet wurden, wird das
+      erste dargestellt. Die anderen können in der Auswahlbox der Werkzeugleiste
+      zur Bearbeitung gewählt werden.</p>
+    <p style="font-weight: normal">Bei Änderungen der Fenstergröße erfolgt keine
+      automatische Anpassung des Bildes. In der Titelzeile des Fensters wird der
+      vollständige Dateipfad angezeigt.</p>
+    <p>In der Statuszeile werden von links nach rechts folgende Informationen
+      präsentiert: </p>
+    <p style="margin-bottom: 0cm; margin-left: 40px;">Feld 1: Breite und Höhe
+      des Bildes in Pixel.</p>
+    <div style="margin-left: 40px;"> </div>
+    <p style="margin-bottom: 0cm; margin-left: 40px;">Feld 2: (x,y)-Koordinaten
+      des Mauszeigers.</p>
+    <div style="margin-left: 40px;"> </div>
+    <p style="margin-bottom: 0cm; margin-left: 40px;">Feld 3: Abmessungen des
+      Auswahlrechtecks.</p>
+    <div style="margin-left: 40px;"> </div>
+    <p style="margin-bottom: 0cm; margin-left: 40px;">Feld 4:
+      Vergrößerungs--/Verkleinerungsfaktor in Prozent.</p>
+    <div style="margin-left: 40px;"> </div>
+    <p style="margin-bottom: 0cm; margin-left: 40px;">Feld 5: Dateiname mit
+      vollständigem Pfad</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;</span></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <h3 class="western"><span style="font-family: Helvetica,Arial,sans-serif;"><a
+          name="menuimageEditor"></a></span>Menüs und Funktionen des Bildeditors</h3>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <h3 class="western"><span style="font-family: Helvetica,Arial,sans-serif;"><a
+          name="menuimageEditorFile"></a>Datei</span></h3>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Datei | speichern</b></p>
+    <p>Die Datei wird unter ihrem Namen gespeichert. Wenn zuvor das Bild gedreht
+      oder in der Größe geändert wurde, wird das Originalbild mit den Änderungen
+      überschrieben.</p>
+    <p class="western"><b>Datei | speichern als</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p style="font-weight: normal">Das Bild kann unter einem neuen Namen und in
+      einem anderen Dateiformat (TIFF, PNG, JPEG) gespeichert werden. Die
+      Originaldatei bleibt unverändert erhalten.</p>
+    <div style="margin-left: 80px;"><img src="images-de/imageEditorSaveAsPNG.png"
+        alt="imageEditorSaveAsPNG" title="imageEditorSaveAsPNG"> <span style="font-family: Helvetica,Arial,sans-serif;">
+      </span> <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    </div>
+    <p style="font-weight: normal">Beim Öffnen des Dialogs wird der aktuelle
+      Dateiname im Eingabefeld „File name“ angezeigt.<br>
+      Die Zeile "Image type" enthält ein Kombinationsfeld, mit der das
+      gewünschte Format gewählt wird. Dabei wird die neue Dateierweiterung an
+      den Dateinamen angehängt, bereits vorhandene Dateierweiterungen werden
+      nicht entfernt.<br>
+      Standardmäßig ist das jpeg-Format voreingestellt (der oberste Eintrag des
+      Kombinationsfeldes).<br>
+      Darunter werden die möglichen Optionen zum gewählten Dateiformat
+      eingestellt.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <h3 class="western"><span style="font-family: Helvetica,Arial,sans-serif;"><a
+          name="menuimageEditorView"></a>Ansicht</span></h3>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Ansicht | vergrößern</b></p>
+    <p style="font-weight: normal">Mit der Tastenkombination Strg+ wird das Bild
+      um 20% vergrößert dargestellt (zoom in). Die Fenstergröße wird nicht
+      verändert, gegebenenfalls erscheinen Rollbalken. Vergrößerung ist bis zu
+      300% möglich.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Ansicht | verkeinern</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Die Tastenkombination Strg– verkleinert das Bild um 20% (zoom out). Wird
+      es kleiner als das Fenster, erscheint der graue Hintergrund. Die
+      Verkleinerung endet bei 20% der ursprünglichen Größe.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Ansicht | Originalgröße</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Die Tastenkombination Strg 0 stellt immer die originale Größe her.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <h3 class="western"><span style="font-family: Helvetica,Arial,sans-serif;"><a
+          name="menuimageEditorImage"></a>Bild</span></h3>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Im Kontextmenü (rechte Maustaste) sind die nachfolgenden Basisfunktionen
+      Zuschneiden, Drehen und Spiegeln verfügbar. Diese Operationen wirken immer
+      auf eine Speicher-Kopie des Originalbildes. Das Original wird also erst
+      durch Speichern geändert.</p>
+    <p class="western"><b>Bild | auf Auswahl zuschneiden</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Das Bild wird auf den Bereich des Auswahlrechtecks zugeschnitten. Das
+      resultierende Bild hat die gleichen Dimensionen wie das Rechteck.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Bild | 90° nach links drehen</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Das Bild wird im Gegenuhrzeigersinn um 90° gedreht.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Bild | 90° nach rechts drehen</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Das Bild wird im Uhrzeigersinn um 90° gedreht.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Bild | 180° drehen</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Das Bild wird um 180° gedreht, also auf den Kopf gestellt.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Bild | horizontal umklappen</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Das Bild wird um die Hochachse gedreht, so dass der ursprünglich linke
+      Rand zum rechten Rand wird und der ursprünglich rechte zum linken Rand.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Bild | vertikal umklappen</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Das Bild wird um die Querachse gedreht, so dass der ursprünglich obere
+      Rand zum unteren Rand wird und der ursprünglich untere zum oberen Rand.</p>
+    <p><b>Bild | Stapelverarbeitung</b> <span style="font-family: Helvetica,Arial,sans-serif;">
+      </span> </p>
+    <p>Öffnet die Stapelverarbeitung aus dem Bildeditor. Die zuvor gewählten
+      Bilder (Inhalt der Combobox) können verändert werden. </p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <h2 class="western"><span style="font-family: Helvetica,Arial,sans-serif;"><font
+          color="#000000"><font color="#000000"> <a name="imageeditselect"></a></font></font></span>Einen
+      Bereich des Bildes auswählen und freistellen</h2>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p style="font-weight: normal">Das Bild muss zum Freistellen immer in
+      Originalgröße angezeigt werden. Freistellen auf größengeänderten Bildern
+      wird nicht unterstützt.</p>
+    <div style="margin-left: 80px;"><img src="images-de/imageEditorSelect.png" alt="imageEditorSelect"
+        title="imageEditorSelect"> <span style="font-family: Helvetica,Arial,sans-serif;">
+      </span> <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    </div>
+    <p style="font-weight: normal">Sowie sich der Mauszeiger über dem sichtbaren
+      Bereich des Bildes befindet wird er zum Fadenkreuz. Im zweiten Feld der
+      Statusleiste ist die Position (x,y) der Maus abzulesen, bezogen auf den
+      Ursprung (0,0) in der linken oberen Bildecke.</p>
+    <p style="font-weight: normal">Bewegen Sie den Mauszeiger an die Bildstelle,
+      welche einer Ecke des auszuwählenden Bereichs entsprechen soll. Drücken
+      Sie die linke Maustaste und ziehen Sie das Fadenkreuz bis zur gewünschten
+      gegenüberliegenden Ecke.</p>
+    <p style="font-weight: normal">Das Fadenkreuz spannt ein graues rechteckiges
+      Gummiband auf, dessen Größe im Feld 3 der Statuszeile angezeigt wird. Beim
+      Loslassen bleibt das Rechteck unverändert erhalten. Erneutes Drücken der
+      linken Maustaste löscht die Auswahl, so dass eine neue Wahl getroffen
+      werden kann.</p>
+    <p style="font-weight: normal">Bewegen Sie den Mauszeiger auf eine Kante des
+      Rechtecks und er verwandelt sich in einen Doppelpfeil. Drücken Sie die
+      linke Maustaste und ziehen Sie die Kante auf die gewünschten Position. Mit
+      den anderen Kanten verfahren Sie genau so. Es kann nur jeweils eine Kante
+      bewegt werden.</p>
+    <p style="font-weight: normal">Wenn Sie beim Ziehen die Maus über einen
+      Fensterrand bewegen, wird das Bild entsprechend gerollt. Die gepackte
+      Kante hängt aber weiterhin am Mauszeiger. Erst das Loslassen der Maustaste
+      beendet den Ziehvorgang an der jeweiligen Position innerhalb der
+      Bildabmessungen.</p>
+    <p style="font-weight: normal">Wenn das graue Rechteck dem gewünschten
+      Bildausschnitt entspricht, öffnen Sie das Kontext-Menü und wählen &lt;Auf
+      Auswahl zuschneiden&gt;. </p>
+    <p style="font-weight: normal">Vergessen Sie nicht die Auswahl unter einem
+      sinnvollen Namen zu speichern.<span style="font-family: Helvetica,Arial,sans-serif;">
+        <br>
+      </span></p>
+    <h2><a name="batchEditor"><span style="font-family: Helvetica,Arial,sans-serif;"></span></a>Stapelverarbeitung</h2>
+    <p style="font-weight: normal">Über Menü &lt;Bild | Mehrfachverarbeitung&gt;
+      oder &lt;F11&gt; werden ein oder mehrere markierte Vorschaubilder in den
+      Bildeditor geladen und das erste geöffnet.</p>
+    <p style="font-weight: normal">Im zentralen Bereich des Bildes erscheint ein
+      Dialogfenster mit der Eingangsseite der Stapelverarbeitung. Die Seiten
+      sind nachfolgend dargestellt. Mit den Pfeiltasten können die Seiten
+      gewechselt werden, das rote Kreuz bricht die Stapelverarbeitung sofort ab
+      ohne etwas zu ändern.</p>
+    <p style="font-weight: normal"> Die Stapelverarbeitung führt die einzelnen
+      Seiten in genau dieser Reihenfolge aus. Seite 2 erhält das Ergebnis der
+      Seite 1 zur Bearbeitung, Seite 3 das Ergebnis der Seite 2 und so weiter.
+      Die Einstellungen müssen daher sorgfältig überlegt werden, damit das
+      gewünschte Ergebnis entsteht. Die auf einer Seite keine Änderungen
+      angegeben, wird diese bei der Ausführung übersprungen.</p>
+    <p style="font-weight: normal"><b>1. Bild umklappen oder in beliebigem
+        Winkel drehen oder an Exif Daten ausrichten</b></p>
+    <p style="font-weight: normal"> Das Ausrichten über die Exif Daten hat nur
+      dann Wirkung, wenn erstens Exif-Daten vorhanden sind und zweitens das Bild
+      mit gedrehter Kamera aufgenommen wurde. Digitalkameras erzeugen gewöhnlich
+      ein rechteckiges Bild, wobei bei normaler Haltung die Unterkante des
+      Bildes der Unterkante der Kamera entspricht. Wurde das Bild mit gedehter
+      Kamera (90° nach links oder rechts) oder auf dem Kopf stehender Kamera
+      aufgenommen, kann dies hier korrigiert werden. Schräg aufgenommen Bilder
+      bleiben dabei aber schräg.</p>
+    <div style="margin-left: 80px;"> <img src="images-de/batchEditorRotate.png"
+        alt="batchEditorRotate" title="batchEditorRotate"> </div>
+    <p style="font-weight: normal"><br>
+    </p>
+    <p style="font-weight: normal"><b>2. Bild beschneiden</b></p>
+    <p style="font-weight: normal">Von der jeweiligen Kante wird die angegebene
+      Pixelzahl abgeschnitten. Aus einem Bild BxH=800x600 wird mit den Werten
+      50/50/30/20 ein Bild der Größe BxH=730x520.</p>
+    <div style="margin-left: 80px;"><img src="images-de/batchEditorTrim.png" alt="batchEditorTrim"
+        title="batchEditorTrim"></div>
+    <p style="font-weight: normal">Bei der Vorgabe 0 Pixel erfolgt keine
+      Beschneidung an dieser Kante.</p>
+    <p style="font-weight: normal"><br>
+    </p>
+    <p style="font-weight: normal"><b>3. Größe ändern</b></p>
+    <p style="font-weight: normal">Die endgültige Bildgröße kann auf drei Arten
+      festgelegt werden:</p>
+    <p style="font-weight: normal">Gemäß Bildhöhe: Die Bildhöhe wird vorgegeben,
+      die neue Bildbreite wird aus dem ursprünglichen Verhältnis Breite:Höhe
+      berechnet.<br>
+      Gemäß Bildbreite: Die Bildbreite wird vorgegeben, die neue Bildhöhe wird
+      aus dem ursprünglichen Verhältnis Breite:Höhe berechnet.<br>
+      Prozentwert: die Höhe und die Breite werden auf den angegebenen
+      Prozentwert umgerechnet.</p>
+    <p style="font-weight: normal">Das resultierende Bild kann je nach Vorgabe
+      größer oder kleiner als das Original werden.</p>
+    <div style="margin-left: 80px;"><img src="images-de/batchEditorResize.png" alt="batchEditorResize"
+        title="batchEditorResize"> </div>
+    <p style="font-weight: normal"><br>
+    </p>
+    <p style="font-weight: normal"><b>4. Speichern</b></p>
+    <p style="font-weight: normal">Wählen Sie das Dateiformat aus und passen
+      evtl. zugehörende Parameter an, für das JPEG-Format ist dies die
+      Bildqualität.</p>
+    <p style="font-weight: normal">Sie können einem anderen Speicherort
+      vorgeben, damit die Originaldatei nicht beeinflusst wird oder Sie wählen
+      "Originaldatei überschreiben".</p>
+    <p style="font-weight: normal">Soll im gleichen Verzeichnis und im gleichen
+      Format ohne Überschreiben gespeichert werden, setzt Imarca dem
+      urspünglichen Dateinamen ein #&nbsp; voran. Damit bleibt das Original
+      unverändert.</p>
+    <div style="margin-left: 80px;"> <img src="images-de/batchEditorSave.png" alt="batchEditorSave"
+        title="batchEditorSave" style="margin-left: -4px;"> </div>
+    <p style="font-weight: normal"><br>
+    </p>
+    <p style="font-weight: normal"><b>4. Ausführen</b></p>
+    <p style="font-weight: normal">Das Drücken der Schaltfläche "Start" führt
+      die vorgegebenen Änderungen auf alle gewählte Bilder aus. Die Reihenfolge
+      der Änderungen entspricht der Reihenfolge der Einstellungsfenster, also
+      Drehen - Beschneiden - Größe ändern.</p>
+    <div style="margin-left: 80px;"><img src="file:///home/maeschter/imarca/kbvHelp/imageEditor/images-de/batchEditorExecute.png"
+        alt="batchEditorExecute" title="batchEditorExecute"></div>
+    <p style="font-weight: normal"><br>
+      Sowie die Bearbeitung gestartet wurde, erscheinteine Fortschrittsanzeige.</p>
+    <p style="font-weight: normal"><br>
+    </p>
+    <p style="font-weight: normal"><b>5. Fortschrittsanzeige</b></p>
+    <p style="font-weight: normal">Die laufende Bearbeitung kann je nach Anzahl
+      der Bilder und der Bearbeitungsschritte einige Zeit erforden. Am
+      Fortschrittsbalken ist der Zustand leicht zu verfolgen.</p>
+    <div style="margin-left: 80px;"> <img src="images-de/batchEditorResult.png"
+        alt="batchEditorResult" title="batchEditorResult" style="margin-left: -4px;">
+    </div>
+    <p style="font-weight: normal">Mit der Schaltfläche "Abbrechen" kann der
+      Vorgang zu einem beliebigen Zeitpunkt beendet werden. Im Beispiel ist die
+      Verarbeitung ohne Fehler durchgeführt worden. Sollten Fehler aufgetreten
+      sein, wird dies durch entsprechenden Text mitgeteilt und die Taste
+      "Report" wird freigegeben. Im zugehörenden Bericht sind Fehler
+      eingetragen. </p>
+    <p style="font-weight: normal"><br>
+    </p>
+    <p style="font-weight: normal"><br>
+    </p>
+    <p style="font-weight: normal"><br>
+    </p>
+    <p style="font-weight: normal"><br>
+    </p>
+    <p style="font-weight: normal"><br>
+      <span style="font-family: Helvetica,Arial,sans-serif;"> </span> </p>
+  </body>
+</html>

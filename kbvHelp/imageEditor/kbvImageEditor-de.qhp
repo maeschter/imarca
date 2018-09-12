@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>org.kbv.imageEditor</namespace>
+    <virtualFolder>help</virtualFolder>
+    <filterSection>
+        <toc>
+             <section title="Bilder bearbeiten" ref="kbvImageEditor-de.html#imageEditor">
+                 <section title="Bildereditor" ref="kbvImageEditor-de.html#singleEditor">
+                     <section title="Menüs und Funktionen" ref="kbvImageEditor-de.html#menuimageEditor"/>
+                     <section title="Bildbereich auswählen" ref="kbvImageEditor-de.html#imageeditselect"/>
+                 </section>
+                 <section title="Stapelverarbeitung" ref="kbvImageEditor-de.html#batchEditor"/>
+             </section>
+        </toc>
+        <files>
+            <file>kbvImageEditor-de.html</file>
+            <file>images-de/x_tip.png</file>
+            <file>images-de/imageEditorSelect.png</file>
+            <file>images-de/imageEditorMainWindow.png</file>
+            <file>images-de/imageEditorSaveAsPNG.png</file>
+            <file>images-de/batchEditorRotate.png</file>
+            <file>images-de/batchEditorTrim.png</file>
+            <file>images-de/batchEditorResize.png</file>
+            <file>images-de/batchEditorSave.png</file>
+            <file>images-de/batchEditorExecute.png</file>
+            <file>images-de/batchEditorResult.png</file>
+        </files>
+    </filterSection>
+</QtHelpProject>
