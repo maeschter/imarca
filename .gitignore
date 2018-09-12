@@ -1,0 +1,10 @@
+# Untracked files
+
+kbvCore.pro.*
+kbvCore/prd/**
+kbvExiv.pro.*
+kbvExiv/prd/**
+kbvImageEditor.pro.*
+kbvImageEditor/prd/**
+kbvMetadata.pro.*
+kbvMetadata/prd/**
