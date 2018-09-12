@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html dir="ltr" lang="de-de">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Dynamic Plugin</title>
+    <meta name="generator" content="Blue Griffon">
+    <meta name="created" content="00:00:00">
+    <meta name="changed" content="2018-02-08T22:00:02.125906250">
+    <style type="text/css">
+		h2.cjk { font-family: "Noto Sans CJK SC Regular" }
+		h2.ctl { font-family: "FreeSans" }
+		h3.cjk { font-family: "Noto Sans CJK SC Regular" }
+		h3.ctl { font-family: "FreeSans" }
+		h5.cjk { font-family: "Noto Sans CJK SC Regular" }
+		h5.ctl { font-family: "FreeSans" }
+		h4.cjk { font-family: "Noto Sans CJK SC Regular" }
+		h4.ctl { font-family: "FreeSans" }
+	</style>
+    <meta name="author" content="GT">
+  </head>
+  <body dir="ltr" lang="de-DE"><span style="font-family: Helvetica,Arial,sans-serif;">
+    </span>
+    <p><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;</span></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"></span><span style="font-family: Helvetica,Arial,sans-serif;"></span><span
+      style="font-family: Helvetica,Arial,sans-serif;"></span><span style="font-family: Helvetica,Arial,sans-serif;"></span>
+    <h1 style="page-break-before: always"><span style="font-family: Helvetica,Arial,sans-serif;"><a
+          name="imageEditor"></a> </span>Dynamisches Plugin</h1>
+    <span style="font-family: Helvetica,Arial,sans-serif;"></span><span style="font-family: Helvetica,Arial,sans-serif;"></span>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <h2 class="western"><span style="font-family: Helvetica,Arial,sans-serif;"><a
+          name="menuimageEditor"></a></span>Menüs und Funktionen des Plugins</h2>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <h3 class="western"><span style="font-family: Helvetica,Arial,sans-serif;"><a
+          name="menuimageEditorFile"></a>Datei</span></h3>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Datei | speichern</b></p>
+    <p>Die Datei wird unter ihrem Namen gespeichert. Wenn zuvor das Bild gedreht
+      oder in der Größe geändert wurde, wird das Originalbild mit den Änderungen
+      überschrieben.</p>
+    <p class="western"><b>Datei | speichern als</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p style="font-weight: normal">Das Bild kann unter einem neuen Namen und in
+      einem anderen Dateiformat (TIFF, PNG, JPEG) gespeichert werden. Die
+      Originaldatei bleibt unverändert erhalten.</p>
+    <p style="font-weight: normal">Beim Öffnen des Dialogs wird der aktuelle
+      Dateiname im Eingabefeld „File name“ angezeigt.<br>
+      Die Zeile "Image type" enthält ein Kombinationsfeld, mit der das
+      gewünschte Format gewählt wird. Dabei wird die neue Dateierweiterung an
+      den Dateinamen angehängt, bereits vorhandene Dateierweiterungen werden
+      nicht entfernt.<br>
+      Standardmäßig ist das jpeg-Format voreingestellt (der oberste Eintrag des
+      Kombinationsfeldes).<br>
+      Darunter werden die möglichen Optionen zum gewählten Dateiformat
+      eingestellt.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <h3 class="western"><span style="font-family: Helvetica,Arial,sans-serif;"><a
+          name="menuimageEditorView"></a>Ansicht</span></h3>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Ansicht | vergrößern</b></p>
+    <p style="font-weight: normal">Mit der Tastenkombination Strg+ wird das Bild
+      um 20% vergrößert dargestellt (zoom in). Die Fenstergröße wird nicht
+      verändert, gegebenenfalls erscheinen Rollbalken. Vergrößerung ist bis zu
+      300% möglich.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Ansicht | verkeinern</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Die Tastenkombination Strg– verkleinert das Bild um 20% (zoom out). Wird
+      es kleiner als das Fenster, erscheint der graue Hintergrund. Die
+      Verkleinerung endet bei 20% der ursprünglichen Größe.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Ansicht | Originalgröße</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Die Tastenkombination Strg 0 stellt immer die originale Größe her.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <h3 class="western"><span style="font-family: Helvetica,Arial,sans-serif;"><a
+          name="menuimageEditorImage"></a>Bild</span></h3>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Im Kontextmenü (rechte Maustaste) sind die nachfolgenden Basisfunktionen
+      Zuschneiden, Drehen und Spiegeln verfügbar. Diese Operationen wirken immer
+      auf eine Speicher-Kopie des Originalbildes. Das Original wird also erst
+      durch Speichern geändert.</p>
+    <p class="western"><b>Bild | auf Auswahl zuschneiden</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Das Bild wird auf den Bereich des Auswahlrechtecks zugeschnitten. Das
+      resultierende Bild hat die gleichen Dimensionen wie das Rechteck.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Bild | 90° nach links drehen</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Das Bild wird im Gegenuhrzeigersinn um 90° gedreht.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Bild | 90° nach rechts drehen</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Das Bild wird im Uhrzeigersinn um 90° gedreht.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Bild | 180° drehen</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Das Bild wird um 180° gedreht, also auf den Kopf gestellt.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Bild | horizontal spiegeln</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Das Bild wird um die Hochachse gedreht, so dass der ursprünglich linke
+      Rand zum rechten Rand wird und der ursprünglich rechte zum linken Rand.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p class="western"><b>Bild | vertikal spiegeln</b></p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+    <p>Das Bild wird um die Querachse gedreht, so dass der ursprünglich obere
+      Rand zum unteren Rand wird und der ursprünglich untere zum oberen Rand.</p>
+    <span style="font-family: Helvetica,Arial,sans-serif;"></span>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>org.kbv.libDynPlugin</namespace>
+    <virtualFolder>help</virtualFolder>
+    <filterSection>
+        <toc>
+             <section title="Dynamisches Plugin" ref="libDynPlugin-de.html#imageEditor">
+                 <section title="Menüs und Funktionen" ref="libDynPlugin-de.html#menuimageEditor"/>
+             </section>
+        </toc>
+        <files>
+            <file>libDynPlugin-de.html</file>
+            <file>images/x_tip.png</file>
+        </files>
+    </filterSection>
+</QtHelpProject>
