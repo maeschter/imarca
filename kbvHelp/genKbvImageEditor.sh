@@ -1,16 +1,16 @@
 #!/bin/sh
 #Imarca compile help
 #2018.06.28 help files centralised in kbvHelp
-#The script must be in the dir <kbvHelp/kbvCore
+#The script must be in the dir <kbvHelp
 #Structure:
 # imarca
 #   | - kbvCore
 #   | - kbvImageEditor
 #   | - kbvMetadata
 #   | - kbvHelp
-#           | - core
-#           | - imageEditor
-#           | - metadata
+#           | - kbvCore
+#           | - kbvImageEditor
+#           | - kbvMetadata
 #           | - gen
 #  | - test
 
@@ -21,19 +21,18 @@ then
     mkdir "$gendir"
 fi
 
-cd core
+cd imageEditor
 
-$qttooldir/qcollectiongenerator kbvCore-de.qhcp -o kbvCore.de.qhc
-#$qttooldir/qcollectiongenerator kbvCore-en.qhcp -o kbvCore.en.qhc
+$qttooldir/qcollectiongenerator kbvImageEditor-de.qhcp -o kbvImageEditor.de.qhc
+#$qttooldir/qcollectiongenerator kbvImageEditor-en.qhcp -o kbvImageEditor.en.qhc
 
-mv -f kbvCore.de.* ../gen
-#mv -f kbvCore.en.* ../gen
+mv -f kbvImageEditor.de.* ../gen
+#mv -f kbvImageEditor.en.* ../gen
 
 # For test from ide QtCreator
 cd ..
 echo - copy to test dir
-cp ./gen/kbvCore.*.qch  ../test
-cp ./gen/kbvCore.*.qhc  ../test
+cp ./gen/kbvImageEditor.*.qch  ../test
 
 echo Please press any key:
 read key
