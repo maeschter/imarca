@@ -1,1 +1,17 @@
-
+<RCC>
+    <qresource prefix="/iptc">
+        <file>icons/app-exit.png</file>
+        <file>icons/edit-clear.png</file>
+        <file>icons/button-ok.png</file>
+        <file>icons/document-save.png</file>
+        <file>icons/document-save-as.png</file>
+        <file>icons/folder.png</file>
+        <file>icons/iptc1-add.png</file>
+        <file>icons/iptc1.png</file>
+        <file>icons/iptc1-read.png</file>
+        <file>icons/iptc1-read-backward.png</file>
+        <file>icons/iptc1-read-foreward.png</file>
+        <file>icons/iptc1-set.png</file>
+        <file>icons/iptc1-write.png</file>
+    </qresource>
+</RCC>
