@@ -1,1 +1,6 @@
-
+<RCC>
+    <qresource prefix="/kbv">
+        <file>other/imageDB.kbvdb</file>
+        <file>other/kbv_buildtime</file>
+    </qresource>
+</RCC>

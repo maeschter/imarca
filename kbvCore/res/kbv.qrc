@@ -1,1 +1,57 @@
-
+<RCC>
+    <qresource prefix="/kbv">
+        <file>icons/file-add-save-16.png</file>
+        <file>icons/ani_AnimatedBook.gif</file>
+        <file>icons/app-exit.png</file>
+        <file>icons/app-system.png</file>
+        <file>icons/arrow_back.png</file>
+        <file>icons/arrow_forward.png</file>
+        <file>icons/attention.png</file>
+        <file>icons/bookcase.png</file>
+        <file>icons/button_cancel.png</file>
+        <file>icons/di.png</file>
+        <file>icons/drive-harddisk.png</file>
+        <file>icons/eye.png</file>
+        <file>icons/file-rename.png</file>
+        <file>icons/file-save-16.png</file>
+        <file>icons/folder.png</file>
+        <file>icons/folder-image.png</file>
+        <file>icons/help-about.png</file>
+        <file>icons/help-contents.png</file>
+        <file>icons/home.png</file>
+        <file>icons/image-x-generic.png</file>
+        <file>icons/kbv_alben_22x32.png</file>
+        <file>icons/kbv_circle.png</file>
+        <file>icons/kbv_crown_20x32.png</file>
+        <file>icons/kbv_folder_tree_22x22.png</file>
+        <file>icons/kbv_iconview.png</file>
+        <file>icons/kbv_listview.png</file>
+        <file>icons/kbv_no_support.png</file>
+        <file>icons/kbv_triangle-down.png</file>
+        <file>icons/kbv_triangle_left.png</file>
+        <file>icons/kbv_triangle_right.png</file>
+        <file>icons/kbv_triangle-up.png</file>
+        <file>icons/sort_first-last.png</file>
+        <file>icons/sort_last-first.png</file>
+        <file>icons/text-x-generic.png</file>
+        <file>icons/user-home.png</file>
+        <file>icons/view-refresh.png</file>
+        <file>icons/camera-photo.png</file>
+        <file>icons/drive-optical.png</file>
+        <file>icons/media-flash.png</file>
+        <file>icons/media-optical.png</file>
+        <file>icons/camera-video.png</file>
+        <file>icons/kbv_crown_40x64.png</file>
+        <file>icons/database-add.png</file>
+        <file>icons/database-export.png</file>
+        <file>icons/database-import.png</file>
+        <file>icons/kbv_find_24x24.png</file>
+        <file>icons/kbv_search_fail.png</file>
+        <file>icons/edit-clear.png</file>
+        <file>icons/edit-copy.png</file>
+        <file>icons/edit-cut.png</file>
+        <file>icons/edit-paste.png</file>
+        <file>icons/imarca.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>
