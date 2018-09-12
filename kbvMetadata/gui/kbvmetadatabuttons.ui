@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>kbvMetaDataButtonClass</class>
+ <widget class="QWidget" name="kbvMetaDataButtonClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>39</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>750</width>
+    <height>39</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Form</string>
+  </property>
+  <property name="toolTip">
+   <string notr="true"/>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>1</number>
+   </property>
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>1</number>
+   </property>
+   <property name="rightMargin">
+    <number>1</number>
+   </property>
+   <property name="bottomMargin">
+    <number>1</number>
+   </property>
+   <item>
+    <widget class="QPushButton" name="pushButtWrite">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>111</width>
+       <height>37</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Write meta data to file</string>
+     </property>
+     <property name="text">
+      <string>Save</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../res/iptc.qrc">
+       <normaloff>:/iptc/icons/iptc1-write.png</normaloff>:/iptc/icons/iptc1-write.png</iconset>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+S</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButtPrevious">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>111</width>
+       <height>37</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Read previous meta data</string>
+     </property>
+     <property name="text">
+      <string>Read previous</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../res/iptc.qrc">
+       <normaloff>:/iptc/icons/iptc1-read-backward.png</normaloff>:/iptc/icons/iptc1-read-backward.png</iconset>
+     </property>
+     <property name="shortcut">
+      <string>Alt+Left</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButtRead">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>111</width>
+       <height>37</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Read current meta data</string>
+     </property>
+     <property name="text">
+      <string>Read</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../res/iptc.qrc">
+       <normaloff>:/iptc/icons/iptc1-read.png</normaloff>:/iptc/icons/iptc1-read.png</iconset>
+     </property>
+     <property name="shortcut">
+      <string notr="true">Alt+Up</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButtNext">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>111</width>
+       <height>37</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Read next meta data</string>
+     </property>
+     <property name="text">
+      <string>Read next</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../res/iptc.qrc">
+       <normaloff>:/iptc/icons/iptc1-read-foreward.png</normaloff>:/iptc/icons/iptc1-read-foreward.png</iconset>
+     </property>
+     <property name="shortcut">
+      <string>Alt+Right</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButtClose">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>111</width>
+       <height>37</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Close editor</string>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../res/iptc.qrc">
+       <normaloff>:/iptc/icons/app-exit.png</normaloff>:/iptc/icons/app-exit.png</iconset>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+Q</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../res/iptc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
