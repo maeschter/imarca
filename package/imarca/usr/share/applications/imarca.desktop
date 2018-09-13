@@ -1,1 +1,16 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Imarca
+Name[de]=Imarca
+Name[en]=Imarca
+Comment=Manage image collections
+Comment[de]=Bildsammlungen verwalten
+Comment[en]=Manage image collections
+Exec=imarca %U
+Icon=imarca.xpm
+Terminal=false
+Type=Application
+MimeType=application/x-executable;image/jpeg;image/png;image/tiff
+Categories=Application;Graphics;
+StartupNotify=false
 
