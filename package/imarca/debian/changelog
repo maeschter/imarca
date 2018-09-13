@@ -1,0 +1,88 @@
+imarca (0.3.41) unstable; urgency=low
+
+  * Ubuntu 18.04 with Qt 5.9.5
+  * Batch image editing with openCV
+  * Small improvements
+  * Bugfixes
+
+ -- maeschter <lehmgrube@7fun.de>  Thu, 06 Sep 2018 15:10:12 +0100
+
+imarca (0.3.40) unstable; urgency=low
+
+  * Tests with Qt 5.9.5 for Ubuntu 18.04
+  * Fixed Clang warnings concerning c++11
+  * Basic interface for dynamic pluglins
+  * Small improvements
+  * Bugfixes
+
+ -- maeschter <lehmgrube@7fun.de>  Wed, 11 Jun 2018 11:30:12 +0100
+
+imarca (0.3.39) unstable; urgency=low
+
+  * Image viewer rotates image due to exif orientation.
+  * Small improvements
+  * Bugfixes
+
+ -- maeschter <lehmgrube@7fun.de>  Thu, 08 Mar 2018 20:20:12 +0100
+
+imarca (0.3.38) unstable; urgency=low
+
+  * Handle image meta data with plugin
+  * Image editor as plugin
+  * Dynamic wrapper libKbvExiv.so
+  * Import, export and open (mount) collections
+  * Small improvements
+  * Bugfixes
+
+ -- maeschter <lehmgrube@7fun.de>  Wed, 16 Nov 2017 14:39:12 +0200
+
+imarca (0.3.37) unstable; urgency=low
+
+  * Changeover to QT5 
+  * DBUS monitor improved
+  * Update database while csv-check
+  * Settings and config-file improved
+  * Open, import and export collections
+  * Bugfixes
+
+ -- maeschter <lehmgrube@7fun.de>  Wed, 1 Mar 2017 17:45:03 +0200
+
+imarca (0.3.36) unstable; urgency=low
+
+  * Editor for IPTC/EXIF Data 
+  * Copy/cut & paste
+  * Bugfixes
+
+ -- maeschter <lehmgrube@7fun.de>  Sat, 21 Sep 2015 21:48:03 +0200
+
+imarca (0.3.35) unstable; urgency=low
+
+  * Bugfixes
+
+ -- maeschter <lehmgrube@7fun.de>  Sat, 21 May 2015 21:48:03 +0200
+
+imarca (0.3.34) unstable; urgency=low
+
+  * Bugfixes
+
+ -- maeschter <lehmgrube@7fun.de>  Sat, 21 Feb 2015 21:48:03 +0200
+
+imarca (0.3.33) unstable; urgency=low
+
+  * CSV-checker
+  * Bugfixes
+
+ -- maeschter <lehmgrube@7fun.de>  Fri, 02 Jan 2015 21:31:03 +0200
+
+imarca (0.3.32) unstable; urgency=low
+
+  * Bugfixes
+
+ -- maeschter <lehmgrube@7fun.de>  Wed, 22 Oct 2014 16:10:03 +0200
+
+imarca (0.3.31) unstable; urgency=low
+
+  * Help system without use of Qt assistant
+  * Initial release
+
+ -- maeschter <lehmgrube@7fun.de>  Sat, 30 Aug 2014 20:15:43 +0200

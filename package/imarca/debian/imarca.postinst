@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+chmod -v ugo=rwxrwxrwx var/lib/imarca
+chmod -v ugo=rwrwrw var/lib/imarca/kbvCore.de.qhc
+
