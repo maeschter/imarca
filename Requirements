@@ -1,0 +1,21 @@
+This project gets maintained by Qt Creator 4.5.1 IDE.
+For translations Qt Linquist is necessary and help file must be generated with qcollectiongenerator.
+These tools get installed along with Qt 5.9.5.
+To build and run under Ubuntu 18.04 the following libraries are required (including devel headers). 
+libqt5core5a (>= 5.2.1)
+ibqt5gui5 (>= 5.2.1)
+libqt5sql5 (>= 5.2.1)
+libqt5sql5-sqlite (>= 5.2.1)
+libqt5help5 (>= 5.2.1)
+libqt5dbus5 (>= 5.2.1)
+libqt5widgets5 (>= 5.2.1)
+libqt5printsupport5 (>= 5.2.1)
+libc6 (>= 2.14)
+libstdc++6 (>= 5.2)
+libjpeg8 (>= 8c)
+libpng16-16 (>=1.6.10)
+libexiv2-14 (>= 0.25)
+libopencv-core3.2 (>= 3.2.0)
+libopencv-imgcodecs3.2 (>= 3.2.0)
+libopencv-imgproc3.2 (>= 3.2.0)
+
