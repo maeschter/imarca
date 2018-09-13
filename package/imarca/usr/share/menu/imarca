@@ -1,1 +1,4 @@
+?package(imarca):needs="X11" section="Applications/Graphics"\
+  title="imarca" command="/usr/bin/imarca"\
+  icon="/usr/share/pixmaps/imarca.png"
 
