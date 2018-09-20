@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kvb database import export thread
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-02-28 20:29:33 +0100 (Di, 28. Feb 2017) $
- * $Rev: 1159 $
+ * LastChangedDate: 2018-09-16
  * Created: 2017.01.30
  * This program is free software; you can redistribute and/or modify it under
  * the terms of the GNU General Public License as published by the Free

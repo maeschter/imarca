@@ -2,8 +2,7 @@
  * KbvFileTab
  * This is the widget for file tab
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2016-05-27 11:31:29 +0200 (Fr, 27. Mai 2016) $
- * $Rev: 1095 $
+ * LastChangedDate: 2018-09-16
  * Created: 2013.02.28
  ****************************************************************************/
 #ifndef KBVFILETAB_H_

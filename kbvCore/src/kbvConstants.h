@@ -2,8 +2,7 @@
  * kbv constants
  * Globally used definitions, enums, constants and coefficients
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-02-16 21:37:52 +0100 (Fr, 16. Feb 2018) $
- * $Rev: 1451 $
+ * LastChangedDate: 2018-09-16
  * Created: 2009.07.23
  *****************************************************************************/
 #ifndef KBVCONSTANTS_H_
@@ -53,7 +52,7 @@ struct  kbvBatchParam  //parameters for batch processing
 
 // General ***************************************************************
   #define appName               "Imarca"
-  #define appVersion            "0.3.41"                  //application version
+  #define appVersion            "0.3.42"                  //application version
   #define copyrightInfo         "Copyright 2009-2018  The Imarca Team"
   #define appMainWindow         "kbvMain"                 //application object name
   #define appTempDir            "ImarcaTmp"               //application temp dir

@@ -1,5 +1,5 @@
 #!/bin/sh
-#2018.06.02
+#LastChangedDate: 2018-09-20
 #Build libDynPlugin in /prd
 #Build dirs:
 # libDynPlugin  

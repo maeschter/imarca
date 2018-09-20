@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kbv db import/export progress dialog
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-02-17 21:02:14 +0100 (Fr, 17. Feb 2017) $
- * $Rev: 1153 $
+ * LastChangedDate: 2018-09-16
  * Created: 2017.01.31
  *****************************************************************************/
 #ifndef KBVDBIMEXPORTPROGRESS_H_

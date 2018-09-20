@@ -3,8 +3,7 @@
  * Dyn. library interface to libExiv2 >= 0.25
  * import/export macros for dynamic libKbvExiv.so
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-05-05 17:35:37 +0200 (Fr, 05. Mai 2017) $
- * $Rev: 981 $
+ * LastChangedDate: 2018-09-16
  * Created: 2015.10.02
  *****************************************************************************/
 #ifndef KBVEXIV_GLOBAL_H

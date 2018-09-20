@@ -1,8 +1,7 @@
 /*****************************************************************************
  * KbvCollectionTreeModel.cpp
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-01-12 12:08:50 +0100 (Fr, 12. Jan 2018) $
- * $Rev: 1380 $
+ * LastChangedDate: 2018-09-16
  * Created: 2010.10.27
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

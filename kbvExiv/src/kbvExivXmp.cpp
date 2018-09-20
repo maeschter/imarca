@@ -3,8 +3,7 @@
  * Dyn. library interface to libExiv2, XMP functions
  * Derived from libkexiv2
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-05-05 17:35:37 +0200 (Fr, 05. Mai 2017) $
- * $Rev: 1042 $
+ * LastChangedDate: 2018-09-16
  * Created: 2015.10.02
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

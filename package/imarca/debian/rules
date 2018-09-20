@@ -1,4 +1,5 @@
 #!/usr/bin/make -f
+# LastChangedDate: 2018-09-20
 # -*- makefile -*-
 # Sample debian/rules that uses debhelper.
 # This file was originally written by Joey Hess and Craig Small.

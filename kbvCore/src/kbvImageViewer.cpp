@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kvb image viewer
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-02-18 16:17:58 +0100 (So, 18. Feb 2018) $
- * $Rev: 1454 $
+ * LastChangedDate: 2018-09-16
  * Created: 2017.05.01
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

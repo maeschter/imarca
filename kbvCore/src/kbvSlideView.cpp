@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kvb slide view
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-03-06 17:54:18 +0100 (Mo, 06. Mär 2017) $
- * $Rev: 1163 $
+ * LastChangedDate: 2018-09-16
  * Created: 2009.11.29
  * This program is free software; you can redistribute and/or modify it under
  * the terms of the GNU General Public License as published by the Free

@@ -3,8 +3,7 @@
  * Dyn. library interface to libExiv2 >= 0.25, main functions
  * Derived from libkexiv2 0.1.5, uses libexiv2
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-02-24 18:07:08 +0100 (Sa, 24. Feb 2018) $
- * $Rev: 981 $
+ * LastChangedDate: 2018-09-16
  * Created: 2015.10.02
  * Exiv2: http://www.exiv2.org
  * Exif : http://www.exif.org/Exif2-2.PDF

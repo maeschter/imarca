@@ -2,8 +2,7 @@
  * KbvSearchTab
  * This is the widget for search tab
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-02-22 18:20:30 +0100 (Mi, 22. Feb 2017) $
- * $Rev: 1156 $
+ * LastChangedDate: 2018-09-16
  * Created: 2013.01.24
  ****************************************************************************/
 #ifndef KBVSEARCHTAB_H_

@@ -2,8 +2,7 @@
  * kbv plugin image editor.
  * Static plugin to display images.
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-02-27 14:49:17 +0100 (Di, 27. Feb 2018) $
- * $Rev: 1465 $
+ * LastChangedDate: 2018-09-16
  * Created: 2017.03.17
  ****************************************************************************/
 #ifndef KBVIMAGEEDITORPLUGIN_H

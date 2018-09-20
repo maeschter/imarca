@@ -2,8 +2,7 @@
  * KbvExivLocal
  * This is the private part of kbvExiv.h
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-02-27 09:38:50 +0100 (Di, 27. Feb 2018) $
- * $Rev: 981 $
+ * LastChangedDate: 2018-09-16
  * Created: 2017.05.21
  *****************************************************************************/
 #ifndef KBVEXIVLOCAL_H

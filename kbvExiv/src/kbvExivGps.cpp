@@ -3,8 +3,7 @@
  * Dyn. library interface to libExiv2, GPS functions
  * Derived from libkexiv2
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-05-22 20:33:21 +0200 (Mo, 22. Mai 2017) $
- * $Rev: 1042 $
+ * LastChangedDate: 2018-09-16
  * Created: 2015.11.07
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kbv database search dialog
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-05-15 19:45:47 +0200 (Mo, 15. Mai 2017) $
- * $Rev: 1339 $
+ * LastChangedDate: 2018-09-16
  * Created: 2012.00.16
  *****************************************************************************/
 #ifndef KBVDBSEARCHDIALOG_H_

@@ -1,12 +1,8 @@
 /*****************************************************************************
  * KbvInformationDialog
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2016-03-13 12:00:38 +0100 (So, 13. Mär 2016) $
- * $Rev: 1080 $
+ * LastChangedDate: 2018-09-16
  * Created: 2012.07.02
- * This program is free software; you can redistribute and/or modify it under
- * the terms of the GNU General Public License as published by the Free
- * Software Foundation.
  *****************************************************************************/
 #ifndef KBVINFORMATIONDIALOG_H_
 #define KBVINFORMATIONDIALOG_H_

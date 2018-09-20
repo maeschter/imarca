@@ -1,6 +1,6 @@
 #!/bin/sh
 #Imarca update translation files
-##2018.06.27 translations centralised in kbvTranslation
+#LastChangedDate: 2018-09-20 translations centralised in kbvTranslation
 #The script must be in the dir <kbvTranslation>
 #Structure:
 # imarca

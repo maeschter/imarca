@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kbvCsvChecker
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-01-18 17:28:39 +0100 (Do, 18. Jan 2018) $
- * $Rev: 1385 $
+ * LastChangedDate: 2018-09-16
  * Created: 2014.11.15
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

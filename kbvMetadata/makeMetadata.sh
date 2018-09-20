@@ -1,5 +1,5 @@
 #!/bin/sh
-#2018.07.08
+#LastChangedDate: 2018-09-20
 #Build libImageMetadata in /prd
 # kbvMetadata
 #     |--src

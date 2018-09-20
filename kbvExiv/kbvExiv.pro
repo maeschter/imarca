@@ -1,7 +1,6 @@
 #------------------------------------------------------------------
 # kbvExiv (libKbvExiv.so) is a dynamic qt wrapper for libExiv2
-# $LastChangedDate: 2018-03-15 10:35:56 +0100 (Do, 15. Mär 2018) $
-# $Rev: 1493 $
+# LastChangedDate: 2018-09-20
 #  kbvExiv            - project file
 #      |- prd         - lib
 #          |- release - compiler output

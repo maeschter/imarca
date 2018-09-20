@@ -1,8 +1,7 @@
 #------------------------------------------------------------------
 # ImageEditor is a static lib for manipulating images
 # Depends on: libKbvExiv.so
-# $LastChangedDate: 2018-03-15 10:36:39 +0100 (Do, 15. Mär 2018) $
-# $Rev: 1494 $
+# LastChangedDate: 2018-09-20
 #  kbvImageEditor     - project file
 #      |- doc         - doxygen
 #      |- gui         - user interfaces

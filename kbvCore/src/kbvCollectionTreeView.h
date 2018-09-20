@@ -1,8 +1,7 @@
 /*****************************************************************************
  * KbvCollectionTreeView.h
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-02-28 20:29:33 +0100 (Di, 28. Feb 2017) $
- * $Rev: 1159 $
+ * LastChangedDate: 2018-09-16
  * Created: 2010.10.17
  *****************************************************************************/
 #ifndef KBVCOLLECTIONTREEVIEW_H_

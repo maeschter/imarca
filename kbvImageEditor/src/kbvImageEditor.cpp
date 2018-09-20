@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kvb image editor
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-02-27 14:49:17 +0100 (Di, 27. Feb 2018) $
- * $Rev: 1465 $
+ * LastChangedDate: 2018-09-16
  * Created: 2009.03.23
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

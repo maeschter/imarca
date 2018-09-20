@@ -1,8 +1,7 @@
 #---------------------------------------------------------------
 # Imarca is the app for managing image collections
 # kbvCore is the central software part of imarca
-# $LastChangedDate: 2018-03-15 10:29:48 +0100 (Do, 15. Mär 2018) $
-# $Rev: 1490 $
+# LastChangedDate: 2018-09-20
 #  kbvCore            - project file
 #      |- doc         - doxygen
 #      |- gui         - user interfaces

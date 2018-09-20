@@ -1,6 +1,6 @@
 #!/bin/sh
 #Build deban package
-#2018.06.18
+#LastChangedDate: 2018.09.20
 #The script must be in the dir <package>
 # ~imarca/kbvCore/prd
 # ~imarca/kbvExiv/prd

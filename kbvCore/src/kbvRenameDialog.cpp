@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kvb rename dialog handles multiple rename
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-03-08 19:47:29 +0100 (Do, 08. Mär 2018) $
- * $Rev: 1480 $
+ * LastChangedDate: 2018-09-16
  * 2009.09.06 Renamed
  * Created: 2008.11.12
  * This program is free software under the terms of the GNU General Public License,

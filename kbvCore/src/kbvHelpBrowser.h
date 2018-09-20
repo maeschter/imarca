@@ -2,8 +2,7 @@
  * KbvHelpBrowser
  * This is the tool to display and browse help.
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2016-05-27 11:31:29 +0200 (Fr, 27. Mai 2016) $
- * $Rev: 1095 $
+ * LastChangedDate: 2018-09-16
  * Created: 2014.05.19
  ******************************************************************************/
 #ifndef KBVHELPBROWSER_H_

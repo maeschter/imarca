@@ -1,6 +1,6 @@
 #!/bin/sh
 #Imarca compile help
-#2018.06.28 help files centralised in kbvHelp
+#LastChangedDate: 2018.06.28 help files centralised in kbvHelp
 #The script must be in the dir <kbvHelp/kbvCore
 #Structure:
 # imarca

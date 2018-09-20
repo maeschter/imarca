@@ -1,8 +1,7 @@
 /*****************************************************************************
  * Dynamic plugin interface
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-06-02 21:46:35 +0200 (So, 14. Mai 2017) $
- * $Rev: 1338 $
+ * LastChangedDate: 2018-09-16
  * Created: 2018.06.06
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

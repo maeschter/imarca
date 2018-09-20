@@ -1,6 +1,6 @@
 #!/bin/sh
 #copy dyn lib to dir "plugins" for test with QtCreator
-#2018.06.20
+#LastChangedDate: 2018-09-20
 #The script must be in the dir kbvDynPlugin
 
 cp -f ./prd/libDynPlugin.so              ../test/libDynPlugin

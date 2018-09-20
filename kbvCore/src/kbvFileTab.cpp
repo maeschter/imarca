@@ -2,8 +2,7 @@
  * kbvFileTab
  * This is the widget for the file tab
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2016-05-27 11:31:29 +0200 (Fr, 27. Mai 2016) $
- * $Rev: 1095 $
+ * LastChangedDate: 2018-09-16
  * Created: 2013.02.28
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

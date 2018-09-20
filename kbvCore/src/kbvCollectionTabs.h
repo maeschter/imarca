@@ -2,8 +2,7 @@
  * kbvCollectionTabs
  * This is the tab widget for file, search, album and collection tabs
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-04-13 10:44:06 +0200 (Do, 13. Apr 2017) $
- * $Rev: 1262 $
+ * LastChangedDate: 2018-09-16
  * Created: 2011.10.11
  ****************************************************************************/
 #ifndef KBVCOLLECTIONTABS_H_

@@ -2,8 +2,7 @@
  * kbvSearchTab
  * This is the widget for the search tab
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-01-13 19:59:22 +0100 (Sa, 13. Jan 2018) $
- * $Rev: 1382 $
+ * LastChangedDate: 2018-09-16
  * Created: 2013.01.24
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

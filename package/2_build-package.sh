@@ -1,6 +1,6 @@
 #!/bin/sh
 #Build deban package
-#2018.06.18
+#LastChangedDate: 2018.09.20
 
 #working dir: imarca
 cd imarca

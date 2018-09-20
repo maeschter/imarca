@@ -1,7 +1,6 @@
 /*****************************************************************************
  * kvb dir watcher thread
- * $LastChangedDate: 2017-05-27 13:53:15 +0200 (Sa, 27. Mai 2017) $
- * $Rev: 1346 $
+ * LastChangedDate: 2018-09-16
  * Created: 2011.01.03
  * This program is free software; you can redistribute and/or modify it under
  * the terms of the GNU General Public License as published by the Free

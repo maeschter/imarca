@@ -2,8 +2,7 @@
  * kvb image meta IPTC
  * This file contains functions to handle the IPTC part of meta data gui.
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-02-16 21:39:22 +0100 (Fr, 16. Feb 2018) $
- * $Rev: 1452 $
+ * LastChangedDate: 2018-09-16
  * Created: 2015.04.27
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

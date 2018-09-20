@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kbv busy animation
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-04-16 11:31:24 +0200 (So, 16. Apr 2017) $
- * $Rev: 1282 $
+ * LastChangedDate: 2018-09-16
  * Created: 2011.12.04
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

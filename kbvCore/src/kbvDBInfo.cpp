@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kbv database attributes dialog
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-04-23 17:58:29 +0200 (So, 23. Apr 2017) $
- * $Rev: 1294 $
+ * LastChangedDate: 2018-09-16
  * Created: 2011.11.25
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

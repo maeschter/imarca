@@ -1,7 +1,6 @@
 #------------------------------------------------------------------
 # libDynPlugin is a dynamic plugin pattern for testing
-# $LastChangedDate: 2018-06-02 10:37:37 +0100 (Do, 15. Mär 2018) $
-# $Rev: 1495 $
+# LastChangedDate: 2018-09-20
 #  libDynPlugin       - project file
 #      |- doc         - doxygen
 #      |- gui         - user interfaces
