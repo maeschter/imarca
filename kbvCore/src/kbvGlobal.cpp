@@ -239,11 +239,11 @@ QVariant KbvGlobal::displayRoleData(const Kbv::kbvItem *item, int viewMode) cons
  * This function composes tooltips which are requested from (file-, collection,
  * search-) view by TooTipRole.
  * The information contains (in order of appearance):
- * file path and name, size in bytes and image height and width.
+ * file path and name, size, crc32 in bytes and image height and width.
  */
 QString KbvGlobal::tooltip(const Kbv::kbvItem *item) const
 {
-  QString   tip, path, name;
+  QString   tip, path, name, str;
 
   path = item->value(Kbv::FilePathRole).toString();
   name = item->value(Kbv::FileNameRole).toString();
@@ -257,7 +257,9 @@ QString KbvGlobal::tooltip(const Kbv::kbvItem *item) const
   tip.append(tr(" bytes"));
   tip.append("\n");
   tip.append(QString(tr("CRC32:")));
-  tip.append(QString("  %1").arg(QString("%L1").arg(item->value(Kbv::FileCRCRole).toUInt(), 0, 10)));
+  str.append(QString("%L1").arg(item->value(Kbv::FileCRCRole).toUInt(), 0, 10));
+  if(str == "0")   { str = QString("---"); }
+  tip.append("  " + str);
   tip.append("\n");
   tip.append(QString(tr("Width:")));
   tip.append(QString("   %1").arg(item->value(Kbv::ImageDimRole).toSize().width(), 0, 10));
