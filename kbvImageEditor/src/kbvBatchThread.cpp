@@ -81,7 +81,7 @@ void  KbvBatchThread::stopThread()
  */
 void  KbvBatchThread::run()
 {
-  bool            fileChanged;
+  bool            fileChanged=false;
   QFile           reportFile;
   QTextStream     outReport;
   QString         lineEnd, str;
@@ -89,7 +89,6 @@ void  KbvBatchThread::run()
 
   //qDebug() << "KbvBatchThread::run" <<mFile; //###########
   emit threadNotRunning(false);
-  fileChanged = false;
 
   //working loop
   for(int i=0; i<mLot; ++i)
@@ -98,6 +97,7 @@ void  KbvBatchThread::run()
         {
           break;
         }
+      fileChanged = false;
       mCombo->setCurrentIndex(i);
       mFile = mCombo->currentText();
       mPath = mCombo->currentData().toString();
