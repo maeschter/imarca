@@ -10,7 +10,6 @@
 #include <QtDebug>
 #include "kbvBatchThread.h"
 
-
 KbvBatchThread::KbvBatchThread(QObject *parent) : QThread(parent)
 {
   mAbort = false;
