@@ -1,7 +1,7 @@
 /*****************************************************************************
  * kbvFileModelThread
  * (C): G. Trauth, Erlangen
- * LastChangedDate: 2018-09-16
+ * LastChangedDate: 2018-10-10
  * Created: 2009.01.15
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.
@@ -9,6 +9,7 @@
  *****************************************************************************/
 #include <QtDebug>
 #include "kbvBatchThread.h"
+
 
 KbvBatchThread::KbvBatchThread(QObject *parent) : QThread(parent)
 {
