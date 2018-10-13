@@ -1,7 +1,8 @@
 /*****************************************************************************
  * kbvFileModelThread
  * (C): G. Trauth, Erlangen
- * LastChangedDate: 2018-10-10
+ * $LastChangedDate: 2018-02-02 12:42:19 +0100 (Fr, 02. Feb 2018) $
+ * $Rev: 1405 $
  * Created: 2009.01.15
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.
@@ -81,7 +82,7 @@ void  KbvBatchThread::stopThread()
  */
 void  KbvBatchThread::run()
 {
-  bool            fileChanged=false;
+  bool            fileChanged;
   QFile           reportFile;
   QTextStream     outReport;
   QString         lineEnd, str;
@@ -89,6 +90,7 @@ void  KbvBatchThread::run()
 
   //qDebug() << "KbvBatchThread::run" <<mFile; //###########
   emit threadNotRunning(false);
+  fileChanged = false;
 
   //working loop
   for(int i=0; i<mLot; ++i)
@@ -97,7 +99,6 @@ void  KbvBatchThread::run()
         {
           break;
         }
-      fileChanged = false;
       mCombo->setCurrentIndex(i);
       mFile = mCombo->currentText();
       mPath = mCombo->currentData().toString();
