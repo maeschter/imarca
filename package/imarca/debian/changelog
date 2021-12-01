@@ -1,11 +1,30 @@
+imarca (0.3.43) unstable; urgency=low
+
+  * Ubuntu 20.04 with Qt 5.12.8
+  * Bugfixes
+  * github: master
+
+ -- maeschter <maeschter.imarca@gmail.com>  Tue, 19 Nov 2021 09:48:12 +0100
+
+imarca (0.3.42) unstable; urgency=low
+
+  * Ubuntu 18.04 with Qt 5.9.5
+  * Batch image editing with openCV
+  * Small improvements
+  * Bugfixes
+  * github: master
+
+ -- maeschter <maeschter.imarca@gmail.com>  Thu, 20 Sep 2018 10:48:12 +0100
+
 imarca (0.3.41) unstable; urgency=low
 
   * Ubuntu 18.04 with Qt 5.9.5
   * Batch image editing with openCV
   * Small improvements
   * Bugfixes
+  * github: master
 
- -- maeschter <lehmgrube@7fun.de>  Thu, 06 Sep 2018 15:10:12 +0100
+ -- maeschter <maeschter.imarca@gmail.com>  Thu, 06 Sep 2018 15:10:12 +0100
 
 imarca (0.3.40) unstable; urgency=low
 
@@ -14,6 +33,7 @@ imarca (0.3.40) unstable; urgency=low
   * Basic interface for dynamic pluglins
   * Small improvements
   * Bugfixes
+  * last private revision in svn
 
  -- maeschter <lehmgrube@7fun.de>  Wed, 11 Jun 2018 11:30:12 +0100
 

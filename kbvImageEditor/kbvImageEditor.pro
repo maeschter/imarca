@@ -1,8 +1,7 @@
 #------------------------------------------------------------------
 # ImageEditor is a static lib for manipulating images
 # Depends on: libKbvExiv.so
-# $LastChangedDate: 2018-03-15 10:36:39 +0100 (Do, 15. Mär 2018) $
-# $Rev: 1494 $
+# LastChangedDate: 2021-05-15
 #  kbvImageEditor     - project file
 #      |- doc         - doxygen
 #      |- gui         - user interfaces
@@ -39,6 +38,7 @@ INCLUDEPATH += $$PWD/../kbvCore/src
 INCLUDEPATH +=   $$PWD/../kbvExiv/src
 LIBS        += -L$$PWD/../kbvExiv/prd -lKbvExiv
 #other libs
+INCLUDEPATH += /usr/include/opencv4
 LIBS        += -lopencv_core -lopencv_imgproc -lopencv_imgcodecs
 
 HEADERS +=  src/kbvImageEditorPlugin.h \

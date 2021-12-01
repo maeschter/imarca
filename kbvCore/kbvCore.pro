@@ -1,8 +1,7 @@
 #---------------------------------------------------------------
 # Imarca is the app for managing image collections
 # kbvCore is the central software part of imarca
-# $LastChangedDate: 2018-03-15 10:29:48 +0100 (Do, 15. Mär 2018) $
-# $Rev: 1490 $
+# LastChangedDate: 2021-05-15
 #  kbvCore            - project file
 #      |- doc         - doxygen
 #      |- gui         - user interfaces
@@ -41,6 +40,7 @@ INCLUDEPATH +=   $$PWD/../kbvExiv/src
 LIBS        += -L$$PWD/../kbvExiv/prd -lKbvExiv  #for test with LD_LIBRARY_PATH
 
 #system libraries
+INCLUDEPATH += /usr/include/opencv4
 LIBS    += -ljpeg -lpng -lopencv_core -lopencv_imgproc -lopencv_imgcodecs
 
 HEADERS +=  src/kbvPluginInterfaces.h \
