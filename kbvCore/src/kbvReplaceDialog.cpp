@@ -1,9 +1,7 @@
 /*****************************************************************************
  * kvb replace dialog handles replacing of files
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-03-08 19:47:29 +0100 (Do, 08. Mär 2018) $
- * $Rev: 1480 $
- * 2009.09.06 Replaced
+ * LastChanged: 2021-12-01
  * Created: 2011.08.19
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

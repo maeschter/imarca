@@ -3,8 +3,7 @@
  * Select Country and ISO country code
  * Derived from libkexiv2
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-03-28 21:01:06 +0200 (Di, 28. Mär 2017) $
- * $Rev: 1199 $
+ * LastChanged: 2021-12-01
  * Created: 2015.10.18
  * This program is free software; you can redistribute and/or modify it under
  * the terms of the GNU General Public License as published by the Free

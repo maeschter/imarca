@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kvb image viewer
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-02-18 16:17:58 +0100 (So, 18. Feb 2018) $
- * $Rev: 1454 $
+ * LastChanged: 2021-06-12
  * Created: 2017.05.01
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.
@@ -72,7 +71,9 @@ KbvImageViewer::KbvImageViewer(QWidget *parent, Qt::WindowFlags flags) : QLabel(
 
 KbvImageViewer::~KbvImageViewer()
 {
-  //qDebug() << "KbvImageViewer::~KbvImageViewer"; //###########
+  qDebug() << "KbvImageViewer::~KbvImageViewer"; //###########
+  this->clear();
+  delete  timer1;
   delete  painter;
   delete  playlist;  
   if(!deletelist.isEmpty())
@@ -179,7 +180,7 @@ void  KbvImageViewer::adjustAndShow(QPair<QString, QString> path)
 
   this->setWindowTitle(path.second);
   this->setPixmap(QPixmap());   //show background only, prevents flicker
-  
+
   //load pixmap and display the "no support icon" on failure
   image = QPixmap(path.first + path.second);
   if(image.isNull())
@@ -299,7 +300,7 @@ void  KbvImageViewer::adjustAndShow(QPair<QString, QString> path)
     }
   //qDebug() << "KbvImageViewer::adjustSize image" <<image.width() <<image.height(); //###########
   this->showMetaData(showText);
-  this->setPixmap(image);
+  this->setPixmap(image);         //display image in label
   this->timer1->start();
 }
 

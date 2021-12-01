@@ -2,8 +2,7 @@
  * kbvCollectionModel
  * This is the standard model for albums and collections
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-12-11 15:17:40 +0100 (Mo, 11. Dez 2017) $
- * $Rev: 1366 $
+ * LastChanged: 2021-12-01
  * Created: 2011.01.23
  ****************************************************************************/
 #ifndef KBVCOLLECTIONMODEL_H_

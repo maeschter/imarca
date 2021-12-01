@@ -2,8 +2,7 @@
  * plugin constants
  * Globally used definitions, enums, constants and coefficients
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-02-16 21:37:52 +0100 (Fr, 16. Feb 2018) $
- * $Rev: 1451 $
+ * LastChanged: 2021-12-01
  * Created: 2018.06.23
  *****************************************************************************/
 #ifndef CONSTANTS_H_

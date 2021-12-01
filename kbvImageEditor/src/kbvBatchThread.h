@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kvbFileModelThread
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-06-16 20:17:33 +0200 (Fr, 16. Jun 2017) $
- * $Rev: 1352 $
+ * LastChanged: 2021-12-01
  * Created: 2009.01.15
  * This program is free software; you can redistribute and/or modify it under
  * the terms of the GNU General Public License as published by the Free
@@ -13,7 +12,9 @@
 #include <QtCore>
 #include <QtGui>
 #include <QtWidgets>
-#include <opencv2/opencv.hpp>
+#include <opencv2/core.hpp>
+#include <opencv2/imgproc.hpp>
+#include <opencv2/imgcodecs.hpp>
 #include <kbvExiv.h>
 #include <kbvConstants.h>
 #include "kbvBatchThread.h"

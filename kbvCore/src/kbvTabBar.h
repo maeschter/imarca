@@ -1,8 +1,7 @@
 /* kbvCollectionTabs
  * This is the tab widget for file, search, album and collection tabs
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2016-03-13 12:00:38 +0100 (So, 13. Mär 2016) $
- * $Rev: 1080 $
+ * LastChanged: 2021-12-01
  * Created: 2011.10.12
  ****************************************************************************/
 #ifndef KBVTABBAR_H_

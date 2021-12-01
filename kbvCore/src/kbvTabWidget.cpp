@@ -2,8 +2,7 @@
  * kbvTabWidget
  * This is the tab widget for file tab, search tab and collection tabs
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-12-12 10:52:08 +0100 (Di, 12. Dez 2017) $
- * $Rev: 1367 $
+ * LastChanged: 2021-12-01
  * Created: 2013.01.06
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

@@ -2,8 +2,7 @@
  * kvb global
  * Globally used methods and information
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-03-08 19:47:29 +0100 (Do, 08. Mär 2018) $
- * $Rev: 1480 $
+ * LastChanged: 2021-05-19
  * Created: 2008.08.31
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.
@@ -84,8 +83,9 @@ void    KbvGlobal::displayImages(QListView *view, QAbstractListModel *model, QSo
  * Display slide show. Used in all views when F8 was pressed.
  * If nothing is selected, all items of the current view are displayed.
  * If a sole item is selected the slide show starts from this item.
+ * >>>>> replaced by image viewer
  */
-/* replaced by image viewer
+/*
 void    KbvGlobal::displaySlideShow(QListView *view, QAbstractListModel *model, QSortFilterProxyModel *sortModel)
 {
   QModelIndexList   selIndices;
@@ -240,11 +240,11 @@ QVariant KbvGlobal::displayRoleData(const Kbv::kbvItem *item, int viewMode) cons
  * This function composes tooltips which are requested from (file-, collection,
  * search-) view by TooTipRole.
  * The information contains (in order of appearance):
- * file path and name, size in bytes and image height and width.
+ * file path and name, size, crc32 in bytes and image height and width.
  */
 QString KbvGlobal::tooltip(const Kbv::kbvItem *item) const
 {
-  QString   tip, path, name;
+  QString   tip, path, name, str;
 
   path = item->value(Kbv::FilePathRole).toString();
   name = item->value(Kbv::FileNameRole).toString();
@@ -258,7 +258,9 @@ QString KbvGlobal::tooltip(const Kbv::kbvItem *item) const
   tip.append(tr(" bytes"));
   tip.append("\n");
   tip.append(QString(tr("CRC32:")));
-  tip.append(QString("  %1").arg(QString("%L1").arg(item->value(Kbv::FileCRCRole).toUInt(), 0, 10)));
+  str.append(QString("%L1").arg(item->value(Kbv::FileCRCRole).toUInt(), 0, 10));
+  if(str == "0")   { str = QString("---"); }
+  tip.append("  " + str);
   tip.append("\n");
   tip.append(QString(tr("Width:")));
   tip.append(QString("   %1").arg(item->value(Kbv::ImageDimRole).toSize().width(), 0, 10));
@@ -298,11 +300,7 @@ Kbv::kbvItem*   KbvGlobal::itemFromFile(const QString path, const QString name, 
   quint64       imgSize;
   int           w=1, h=1;
   float         ar;
-  
-/* TODO: Obviously the image reader does not read hidden image files (.image.png)
- * simply ignores, no message
- */
-  
+    
   reader.setAutoDetectImageFormat(true);
   reader.setScaledSize(iconsize);
   //The jpeghandler only shrinks very fast to 1/2, 1/4, 1/8 when quality < 50!
@@ -580,13 +578,12 @@ QString    KbvGlobal::extractKeywords(QString filename, int mode)
 }
 /*************************************************************************//*!
  * Reads the version info of used shared libraries:
- * jpeglib (dirty c-code), libpng, libexiv2
+ * jpeglib (dirty c-code), libpng, libexiv2, opencv
  */
 void    KbvGlobal::getLibraryInfos(QStringList &info)
 {
   QString     verstr;
   int         vernum;
-  cv::String  ocvVer;
 
   info.clear();
 
@@ -626,10 +623,7 @@ void    KbvGlobal::getLibraryInfos(QStringList &info)
   info.append(QString("exiv2.org"));
   info.append("Exif, IPTC and XMP metadata");
 
-  //TODO: wait for openCV >= 3.4.2
-//  ocvVer = cv::getVersionString();    // >= 3.4.2
-//  verstr = QString::fromStdString(ocvVer.operator std::string());
-  verstr = QString("3.2.0");            // < 3.4.2
+  verstr = QString(CV_VERSION);
   info.append((QString("OpenCV")));
   info.append(verstr);
   info.append(QString("opencv.org"));

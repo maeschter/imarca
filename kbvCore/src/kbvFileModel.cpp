@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kvb file model
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-03-08 19:47:29 +0100 (Do, 08. Mär 2018) $
- * $Rev: 1480 $
+ * LastChanged: 2018-09-16
  * Created: 2011.01.27
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.
@@ -843,7 +842,7 @@ void    KbvFileModel::startFileWatchThread(const QString path)
   QPair<QString, qint64>  item;
   int   n;
 
-  //qDebug() << "KbvFileModel::startFileWatchThread" <<rootDir <<restart; //###########
+  qDebug() << "KbvFileModel::startFileWatchThread" <<rootDir <<restart <<isRunning; //###########
   if(isRunning)
     {
       restart = true;
@@ -872,7 +871,7 @@ void    KbvFileModel::startFileWatchThread(const QString path)
  */
 void    KbvFileModel::watchThreadFinished()
 {
-  //qDebug() << "KbvFileModel::watchThreadFinished restart" <<restart; //###########
+  qDebug() << "KbvFileModel::watchThreadFinished restart" <<restart; //###########
   isRunning = false;
   this->removeEmptyItems();
   this->statusText1(QString("%1").arg(this->itemList.size(), 6));

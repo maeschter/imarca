@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kvbCsvCheckThread
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-01-18 17:28:39 +0100 (Do, 18. Jan 2018) $
- * $Rev: 1385 $
+ * LastChanged: 2021-12-01
  * Created: 2014.11.21
  * This program is free software; you can redistribute and/or modify it under
  * the terms of the GNU General Public License as published by the Free

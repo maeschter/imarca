@@ -2,8 +2,7 @@
  * kbvCollectionView
  * This is the standard view for albums and collections
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-04-13 10:44:06 +0200 (Do, 13. Apr 2017) $
- * $Rev: 1262 $
+ * LastChanged: 2021-12-01
  * Created: 2011.10.04
  *****************************************************************************/
 #ifndef KBVCOLLECTIONVIEW_H_

@@ -2,8 +2,7 @@
  * kbv plugin interfaces.
  * Interface declarations for static and dynamic plugins
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-02-27 15:27:08 +0100 (Di, 27. Feb 2018) $
- * $Rev: 1470 $
+ * LastChanged: 2021-12-01
  * Created: 2017.03.17
  ****************************************************************************/
 #ifndef KBVPLUGININTERFACES_H_

@@ -2,8 +2,7 @@
  * kvb image EXIF meta data
  * This file contains functions to handle the EXIF part of meta data gui.
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-05-22 20:32:11 +0200 (Mo, 22. Mai 2017) $
- * $Rev: 1342 $
+ * LastChanged: 2021-12-01
  * Created: 2015.10.25
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

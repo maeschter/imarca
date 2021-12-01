@@ -2,8 +2,7 @@
  * kbvCollectionPopUp
  * This is the pop up menu for search view and collection view
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-06-19 22:24:01 +0200 (Mo, 19. Jun 2017) $
- * $Rev: 1354 $
+ * LastChanged: 2021-12-01
  * Created: 2012.10.01
  ******************************************************************************/
 #ifndef KBVCOLLECTIONPOPUP_H_

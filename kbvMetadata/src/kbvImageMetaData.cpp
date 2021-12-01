@@ -3,8 +3,7 @@
  * kvbImageMetaData, kvbImageMetaDataIptc, kvbImageMetaDataExif, kvbImageMetaDataXMP
  * This is the common class of meta data gui.
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-02-24 17:30:29 +0100 (Sa, 24. Feb 2018) $
- * $Rev: 1455 $
+ * LastChangedD: 2021-12-01
  * Created: 2015.04.27
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

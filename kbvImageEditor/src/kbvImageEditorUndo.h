@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kbv image editor undo/redo commands
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-02-27 14:49:17 +0100 (Di, 27. Feb 2018) $
- * $Rev: 1465 $
+ * LastChanged: 2021-12-01
  * Created: 2017.04.10
  *****************************************************************************/
 #ifndef KBVIMAGEEDITORUNDO_H

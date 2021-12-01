@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kbv dbexport dialog
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-02-17 21:02:14 +0100 (Fr, 17. Feb 2017) $
- * $Rev: 1153 $
+ * LastChanged: 2021-12-01
  * Created: 2016.12.08
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

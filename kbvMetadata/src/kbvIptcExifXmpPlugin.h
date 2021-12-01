@@ -2,8 +2,7 @@
  * kbv plugin for image meta data.
  * Plugin for displaying and editing image meta data IPTC, EXIF and XMP
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-04-02 10:47:16 +0200 (So, 02. Apr 2017) $
- * $Rev: 1234 $
+ * LastChanged: 2021-12-01
  * Created: 2017.03.17
  ****************************************************************************/
 #ifndef KBVIPTCEXIFXMPPLUGIN_H

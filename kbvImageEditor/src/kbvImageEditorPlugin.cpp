@@ -2,8 +2,7 @@
  * kbv plugin image editor.
  * Static plugin to manipulate images.
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-06-02 18:00:39 +0200 (Fr, 02. Jun 2017) $
- * $Rev: 1350 $
+ * LastChanged: 2021-12-01
  * Created: 2017.03.17
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

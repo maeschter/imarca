@@ -2,8 +2,7 @@
  * kbvSearchView
  * This is the standard view for albums and collections
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-02-27 15:27:08 +0100 (Di, 27. Feb 2018) $
- * $Rev: 1470 $
+ * LastChanged: 2021-12-01
  * Created: 2011.10.04
  *****************************************************************************/
 #ifndef KBVSEARCHVIEW_H_

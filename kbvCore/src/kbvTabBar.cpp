@@ -2,8 +2,7 @@
  * kbvTabBar
  * This is the tab bar for kbv collection tabs
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-04-13 10:44:06 +0200 (Do, 13. Apr 2017) $
- * $Rev: 1262 $
+ * LastChanged: 2021-12-01
  * Created: 2011.10.12
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

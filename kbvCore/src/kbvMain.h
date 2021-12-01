@@ -1,8 +1,7 @@
 /*****************************************************************************
  * Main window.
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-01-19 15:49:55 +0100 (Fr, 19. Jan 2018) $
- * $Rev: 1387 $
+ * LastChanged: 2021-05-16
  * Created: 2008.11.06
  ****************************************************************************/
 #ifndef KBV_H_
@@ -70,6 +69,7 @@ private:
   void    readWindowSettings();
   void    loadDynamicPlugins();
   void    loadStaticPlugins();
+  void    checkValidQtVersion();
   
   //QStatusBar                *mainStatusBar;
   KbvGeneral                generalFunc;

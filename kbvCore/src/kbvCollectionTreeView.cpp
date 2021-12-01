@@ -1,8 +1,7 @@
 /*****************************************************************************
  * KbvCollectionTreeView.cpp
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-01-30 22:03:35 +0100 (Di, 30. Jan 2018) $
- * $Rev: 1403 $
+ * LastChanged: 2021-12-01
  * Created: 2010.10.27
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

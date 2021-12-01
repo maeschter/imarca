@@ -2,8 +2,7 @@
  * KbvCollectionStack
  * This is the stack for collection view, model, thread and database
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-06-19 22:24:01 +0200 (Mo, 19. Jun 2017) $
- * $Rev: 1354 $
+ * LastChanged: 2021-12-01
  * Created: 2012.05.14
  ******************************************************************************/
 #ifndef KBVCOLLECTIONSTACK_H_

@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kvb main window
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-03-08 19:47:29 +0100 (Do, 08. Mär 2018) $
- * $Rev: 1480 $
+ * LastChanged: 2021-05-19
  * Created: 2008.11.06
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.
@@ -37,21 +36,9 @@ KbvMain::KbvMain(QWidget *parent) : QMainWindow(parent=nullptr)
   KbvGeneral  generalFunc;
 
     //Valid Qt version?
-    QString str1 = QString(qVersion());      //Installed version if any
-    QString str2 = QString(QT_VERSION_STR);  //Version used for this release
-    if (str1 < str2)
-      {
-        QString warnNoValidversion = QString(tr("Your Qt version is too old. "));
-        warnNoValidversion.append(QString(tr("Installed version: %1\nRequired version: %2").arg(str1).arg(str2)));
-        warnNoValidversion.append(tr("\nTo run the application please install at least Qt version %1 or later.").arg(str2));
-        QMessageBox::critical(this, QString(appName) + " " + QString(appVersion),
-                              warnNoValidversion, QMessageBox::NoButton, QMessageBox::Close);
+    checkValidQtVersion();
 
-        qDebug() << "Qt version too old"; //###########
-      }
-    qDebug() << "Qt version installed:" <<str1 <<"build:" <<str2; //###########
-
-   // Attention: do not change order. !!!!!
+    // Attention: do not change order. !!!!!
     //This reads/stores the settings in ~/.config/imarca/imarca.conf (~/.config/organisation/application.conf)
     settings = new KbvSetvalues(QSettings::NativeFormat, QSettings::UserScope, "imarca", "imarca", this);
 
@@ -276,6 +263,46 @@ void    KbvMain::cmdLineArgs()
     }
 }
 
+/*************************************************************************//*!
+ * Check if installed QT version fulfills requirements of Imarca
+ * Installed version >= required version. Version string: major.minor.lower
+ * We only check major and minor parts
+ */
+void    KbvMain::checkValidQtVersion()
+{
+  bool  ok = false;
+
+  QString str1 = QString(qVersion());      //Installed version if any
+  QString str2 = QString(QT_VERSION_STR);  //Version used for this release
+
+  QStringList strlst1 = str1.split(".");
+  QStringList strlst2 = str2.split(".");
+
+  if(strlst1[0].toInt(&ok, 10) < strlst2[0].toInt(&ok, 10))
+    {
+      ok = false;
+    }
+
+  if (ok)
+    {
+      if(strlst1[1].toInt(&ok, 10) < strlst2[1].toInt(&ok, 10))
+        {
+          ok = false;
+        }
+    }
+  if (not ok)
+    {
+      QString warnNoValidversion = QString(tr("Your Qt version is too old.\n "));
+      warnNoValidversion.append(QString(tr("Installed version: %1\n Required version: %2 ").arg(str1).arg(str2)));
+      warnNoValidversion.append(tr("\nPlease install at least Qt version %1 or later.").arg(str2));
+      QMessageBox::critical(this, QString(appName) + " " + QString(appVersion),
+                            warnNoValidversion, QMessageBox::NoButton, QMessageBox::Close);
+    }
+
+  //qDebug() << "QT version installed" << strlst1[0] << strlst1[1] << strlst1[2]; //###########
+  //qDebug() << "QT version req. by Imarca" << strlst2[0] << strlst2[1] << strlst2[2]; //###########
+
+}
 /*************************************************************************//*!
  * Read init values for kbvWindow.
  */

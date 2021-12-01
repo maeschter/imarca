@@ -1,8 +1,8 @@
 Source: imarca
 Section: graphics
 Priority: optional
-Maintainer: maeschter <lehmgrube@7fun.de>
-Build-Depends: debhelper (>=9), qt5-qmake (>= 5.5.1), qtbase5-dev (>= 5.5.1), qttools5-dev (>=5.5.1) 
+Maintainer: maeschter <maeschter@mmail.de>
+Build-Depends: debhelper (>=9), qt5-qmake (>= 5.12.8), qtbase5-dev (>= 5.12.8), qttools5-dev (>=5.12.8) 
 Standards-Version: 3.9.2
 #Homepage: https://github.com/maeschter/imarca
 #Vcs-Git: git://git.debian.org/collab-maint/imarca.git
@@ -12,7 +12,7 @@ Package: imarca
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqt5core5a (>= 5.2.1), libqt5gui5 (>= 5.2.1), libqt5sql5 (>= 5.2.1), libqt5sql5-sqlite (>= 5.2.1), libqt5help5 (>= 5.2.1), libqt5dbus5 (>= 5.2.1), libqt5widgets5 (>= 5.2.1), libqt5printsupport5 (>= 5.2.1), libc6 (>= 2.14), libstdc++6 (>= 5.2), libjpeg8 (>= 8c), libpng16-16 (>=1.6.10), libexiv2-14 (>= 0.25), libopencv-core3.2 (>= 3.2.0), libopencv-imgcodecs3.2 (>= 3.2.0), libopencv-imgproc3.2 (>= 3.2.0)
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqt5core5a (>= 5.12.8), libqt5gui5 (>= 5.12.8), libqt5sql5 (>= 5.12.8), libqt5sql5-sqlite (>= 5.12.8), libqt5help5 (>= 5.12.8), libqt5dbus5 (>= 5.12.8), libqt5widgets5 (>= 5.12.8), libqt5printsupport5 (>= 5.12.8), libc6 (>= 2.27), libstdc++6 (>= 10.2.0), libjpeg8 (>= 8c), libpng16-16 (>=1.6.10), libexiv2-14 (>= 0.25), libopencv-core4.2 (>= 4.2.0), libopencv-imgcodecs4.2 (>= 4.2.0), libopencv-imgproc4.2 (>= 4.2.0)
 Description: Image management with database support.
  Imarca is an image management application with database support.
  Features:

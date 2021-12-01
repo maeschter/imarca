@@ -3,8 +3,7 @@
  * Plugin to edit image meta data IPTC, EXIF and XMP. The plugin is a static
  * wrapper for libExiv2.
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-05-14 21:46:35 +0200 (So, 14. Mai 2017) $
- * $Rev: 1338 $
+ * LastChanged: 2021-12-01
  * Created: 2017.03.17
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

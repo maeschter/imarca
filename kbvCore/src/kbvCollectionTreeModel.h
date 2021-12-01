@@ -1,7 +1,6 @@
 /* KbvCollectionTreeModel.h
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-12-12 12:01:41 +0100 (Di, 12. Dez 2017) $
- * $Rev: 1368 $
+ * LastChanged: 2021-12-01
  * Created: 2010.10.27
  ****************************************************************************/
 #ifndef KBVCOLLECTIONTREEMODEL_H_

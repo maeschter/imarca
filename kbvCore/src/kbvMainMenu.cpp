@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kvb main menu
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-02-24 17:47:43 +0100 (Sa, 24. Feb 2018) $
- * $Rev: 1456 $
+ * LastChanged: 2021-12-01
  * Created: 2012.09.22
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

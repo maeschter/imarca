@@ -2,8 +2,7 @@
  * KbvHelpBrowser
  * This is the tool to display and browse help.
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-03-14 15:13:08 +0100 (Di, 14. Mär 2017) $
- * $Rev: 1175 $
+ * LastChanged: 2021-12-01
  * Created: 2014.05.19
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

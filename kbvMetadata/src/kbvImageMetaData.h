@@ -2,8 +2,7 @@
  * kvb image meta data
  * This is the common header for all functions of meta data gui.
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-05-14 21:46:35 +0200 (So, 14. Mai 2017) $
- * $Rev: 1338 $
+ * LastChanged: 2021-12-01
  * Created: 2015.04.27
  * Exiv2: http://www.exiv2.org
  * Exif : http://www.exif.org/Exif2-2.PDF

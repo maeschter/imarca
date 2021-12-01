@@ -1,8 +1,7 @@
 /****************************************************************************
  * kvb main.
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-06-16 20:17:33 +0200 (Fr, 16. Jun 2017) $
- * $Rev: 1352 $
+ * LastChanged: 2021-12-01
  * Created: 2008.11.06
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

@@ -2,8 +2,7 @@
  * kbvCollectionPopUp
  * This is the pop up menu for search view and collection view
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-11-19 18:40:14 +0100 (So, 19. Nov 2017) $
- * $Rev: 1363 $
+ * LastChanged: 2021-12-01
  * Created: 2012.10.01
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

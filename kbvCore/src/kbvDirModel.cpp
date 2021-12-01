@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kbvDirModel
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-02-08 19:36:56 +0100 (Do, 08. Feb 2018) $
- * $Rev: 1417 $
+ * LastChanged: 2018-09-16
  * Created: 2009.02.08
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.
@@ -668,7 +667,7 @@ void    KbvDirModel::dirWatcher()
     {
       watchedDir.setFilter(QDir::Dirs | QDir::NoDotAndDotDot);
     }
-  //qDebug() << "KbvDirModel::dirWatcher watch" << index.data(Kbv::FileNameRole).toString(); //###########
+  //qDebug() << "KbvDirModel::dirWatcher on" << index.data(Kbv::FileNameRole).toString(); //###########
 
   //Outer loop runs twice to perform two steps
   //last=false: step 1: process children of watchedIndex
@@ -681,6 +680,7 @@ void    KbvDirModel::dirWatcher()
       dirPath = dirItem->data(Kbv::FilePathRole).toString();
       dirPath += dirItem->data(Kbv::FileNameRole).toString();
       watchedDir.setPath(dirPath);
+      //qDebug() << "KbvDirModel::dirWatcher loop" << dirItem->data(Kbv::FileNameRole).toString(); //###########
 
       //branch 1. the watched dir doesn't exist any more
       if(!watchedDir.exists())
@@ -721,9 +721,9 @@ void    KbvDirModel::dirWatcher()
           //get item from index and collect sub dirs
           dirItem = this->itemFromIndex(index);
           dirPath = dirItem->data(Kbv::FilePathRole).toString();
-          dirPath += dirItem->data(Kbv::FileNameRole).toString();
+          dirName = dirItem->data(Kbv::FileNameRole).toString();
           //qDebug() << "KbvDirModel::dirWatcher watched dir exists" <<dirPath; //###########
-          watchedDir.setPath(dirPath);
+          watchedDir.setPath(dirPath + dirName);
           L2.append(watchedDir.entryList());
 
           if(L2.isEmpty())

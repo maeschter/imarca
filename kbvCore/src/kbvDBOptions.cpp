@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kbv dboptions dialog
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-02-17 20:55:59 +0100 (Fr, 17. Feb 2017) $
- * $Rev: 1151 $
+ * LastChanged: 2021-12-01
  * Created: 2009.02.18
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

@@ -1,8 +1,7 @@
 /* kbvSearchModel
  * This is the standard model for search in albums and collections
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-01-13 19:59:22 +0100 (Sa, 13. Jan 2018) $
- * $Rev: 1382 $
+ * LastChanged: 2021-12-01
  * Created: 2012.08.13
  ****************************************************************************/
 #ifndef KBVSEARCHMODEL_H_

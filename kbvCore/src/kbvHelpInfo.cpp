@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kbv help info dialog
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-02-02 12:42:19 +0100 (Fr, 02. Feb 2018) $
- * $Rev: 1405 $
+ * LastChanged: 2021-12-01
  * Created: 2009.10.17
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

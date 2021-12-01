@@ -2,8 +2,7 @@
  * kvb image XMP meta data
  * This file contains functions to handle the XMP part of meta data gui.
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-05-06 10:58:15 +0200 (Sa, 06. Mai 2017) $
- * $Rev: 1328 $
+ * LastChanged: 2021-12-01
  * Created: 2015.04.27
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

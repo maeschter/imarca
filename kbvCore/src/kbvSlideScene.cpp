@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kvb slide scene
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-04-29 19:20:46 +0200 (Sa, 29. Apr 2017) $
- * $Rev: 1315 $
+ * LastChanged: 2021-12-01
  * Created: 2009.11.29
  * This program is free software; you can redistribute and/or modify it under
  * the terms of the GNU General Public License as published by the Free

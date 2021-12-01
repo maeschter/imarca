@@ -1,8 +1,7 @@
 /*****************************************************************************
  * KbvHelp.cpp
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2016-03-13 12:00:38 +0100 (So, 13. Mär 2016) $
- * $Rev: 1080 $
+ * LastChanged: 2021-12-01
  * Created: 2010.11.12
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

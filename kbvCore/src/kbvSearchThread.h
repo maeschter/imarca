@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kvbSearchThread
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-02-27 15:27:08 +0100 (Di, 27. Feb 2018) $
- * $Rev: 1470 $
+ * LastChanged: 2021-12-01
  * Created: 2012.08.24
  * This program is free software; you can redistribute and/or modify it under
  * the terms of the GNU General Public License as published by the Free

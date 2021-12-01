@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kbv dbimport dialog
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-02-28 20:29:33 +0100 (Di, 28. Feb 2017) $
- * $Rev: 1159 $
+ * LastChanged: 2021-12-01
  * Created: 2016.12.08
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

@@ -1,8 +1,7 @@
 /*****************************************************************************
  * kbvDirView
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2018-01-18 17:30:00 +0100 (Do, 18. Jan 2018) $
- * $Rev: 1386 $
+ * LastChanged: 2021-12-01
  * Created: 2009.02.05
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.

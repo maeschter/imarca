@@ -2,8 +2,7 @@
  * kbvCollectionSortModel
  * This is the sort and filter model for albums and collections
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-12-20 12:43:15 +0100 (Mi, 20. Dez 2017) $
- * $Rev: 1372 $
+ * LastChanged: 2021-12-01
  * Created: 2013.01.03
  ****************************************************************************/
 #ifndef KBVSORTFILTERMODEL_H_

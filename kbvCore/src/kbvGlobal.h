@@ -2,8 +2,7 @@
  * kbv global
  * Globally used methods and information
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-05-05 16:50:24 +0200 (Fr, 05. Mai 2017) $
- * $Rev: 1320 $
+ * LastChanged: 2021-05-19
  * Created: 2009.07.23
  *****************************************************************************/
 #ifndef KBVGLOBAL_H_
@@ -16,7 +15,7 @@
 #include <png.h>          //libpng.so
 #include <jpeglib.h>      //libjpeg.so
 #include <kbvExiv.h>      //libKbvExiv.so, needs libexiv2.so
-#include <opencv2/opencv.hpp>
+#include <opencv2/core.hpp>
 #include "kbvConstants.h"
 
 void    JPEGVersionError(j_common_ptr cinfo);

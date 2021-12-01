@@ -2,8 +2,7 @@
  * kvb file watcher thread
  * version 2, UML diagram KbvFileWatcherThread_run.uxf
  * (C): G. Trauth, Erlangen
- * $LastChangedDate: 2017-06-29 15:06:39 +0200 (Do, 29. Jun 2017) $
- * $Rev: 1359 $
+ * LastChanged: 2021-12-01
  * Created: 2009.09.18
  * This program is free software under the terms of the GNU General Public License,
  * either version 3 of the License, or (at your option) any later version.
