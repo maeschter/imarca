@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>810</y>
+      <w>170</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>dndHandler:
+KbvCollectionDragDrop
+--
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>120</y>
+      <w>160</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>collectionTreeView:
+KbvCollectionTreeView
+--
+clearSelection()
+--
+collapseItem()
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>0</x>
+      <y>10</y>
+      <w>220</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>signals and slots
+collectionTab
+v1.0,  23.12.2016
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>760</x>
+      <y>20</y>
+      <w>700</w>
+      <h>860</h>
+    </coordinates>
+    <panel_attributes>collViewTab:
+KbvCollectionStack
+bg=white
+halign=left
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>10</y>
+      <w>1080</w>
+      <h>880</h>
+    </coordinates>
+    <panel_attributes>KbvTabsRight:
+KbvCollectionTabs
+bg=light_gray
+halign=left
+layer=0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>570</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>settings</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>630</y>
+      <w>100</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>menuBar:
+QMenu
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>470</y>
+      <w>160</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>main:
+KbvMain</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>190</y>
+      <w>170</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>slots:
+--
+activateTab()
+--
+addCollectionTab()
+--
+removeCollectionTab()
+--
+renameCollectionTab()
+--
+showDBInfo()
+--
+readinOrUpdate()
+--
+settingsChanged()
+--
+ctrlAKeyAction()
+--
+searchCollection()
+--
+checkCollection()
+--
+openMetaDataEditor()
+--
+currentTabTitle()
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>880</x>
+      <y>610</y>
+      <w>170</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>collectionView:
+KbvCollectionView
+--
+updateOptions()
+--
+keyPressEvent()
+--
+# renameFromMenu()
+--
+# displaySelectedItems()
+--
+# displaySlideShow()
+--
+changeViewMode()
+--
+setActualBranch()
+layer=2
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1260</x>
+      <y>390</y>
+      <w>190</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>DatabaseInfo:
+KbvDBInfo
+--
+
+layer=2
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1260</x>
+      <y>540</y>
+      <w>190</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>collDB
+(QSqlDatabase, SQLITE3)
+--
+layer=2
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1300</x>
+      <y>120</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>animation:
+KbvBusyAnimation
+--
+layer=2
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>880</x>
+      <y>530</y>
+      <w>170</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>collThread:
+(QThread)
+
+
+layer=2
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>880</x>
+      <y>310</y>
+      <w>170</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>collectionModel:
+KbvCollectionModel
+ 
+--
+readinOrUpdate()
+--
+readFromDB()
+--
+removeEmptyItems()
+--
+statusTextx()
+--
+endOfReading()
+--
+endOfUpdate()
+--
+renameDBBranch()
+
+layer=2
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>880</x>
+      <y>80</y>
+      <w>170</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>slots:
+--
+currentTabTitle()
+--
+warnings()
+--
+askForUserInput()
+--
+showAnimation()
+--
+setAnimationInfo()
+--
+showRecordInfo()
+--
+showDBInfo()
+--
+setInfoTextx()
+--
+endOfAnimation()
+
+layer=2
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>240</y>
+      <w>280</w>
+      <h>470</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=copyPasteAction
+layer=2</panel_attributes>
+    <additional_attributes>10.0;440.0;190.0;440.0;190.0;10.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>690</y>
+      <w>250</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=actRename()
+layer=1</panel_attributes>
+    <additional_attributes>230.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>710</y>
+      <w>250</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=actShow()
+layer=1</panel_attributes>
+    <additional_attributes>230.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>730</y>
+      <w>250</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=actSlideShow()
+layer=1</panel_attributes>
+    <additional_attributes>230.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1300</x>
+      <y>200</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>popupMenu:
+KbvCollectionPopUp
+--
+bg=white
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>220</y>
+      <w>280</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=showDBAttributes()
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>200</y>
+      <w>280</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=showRecordContent()
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>770</x>
+      <y>420</y>
+      <w>130</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=statusTextx()
+layer=2</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;20.0;10.0;160.0;110.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>400</y>
+      <w>170</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=removeEmptyItems()
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;20.0;80.0;130.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>140</y>
+      <w>160</w>
+      <h>470</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=askForUserInput()
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0;140.0;440.0;10.0;440.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>120</y>
+      <w>140</w>
+      <h>470</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=warning()
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0;120.0;430.0;10.0;440.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>160</y>
+      <w>140</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=showAnimation()
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;30.0;100.0;180.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>180</y>
+      <w>160</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=animationInfoText()
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0;80.0;130.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>160</y>
+      <w>280</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=running()
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>800</x>
+      <y>120</y>
+      <w>100</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=warning()
+layer=2</panel_attributes>
+    <additional_attributes>80.0;10.0;20.0;10.0;20.0;220.0;80.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>240</y>
+      <w>110</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=infoTextx()
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0;70.0;120.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>250</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+currentChanged()
+layer=2</panel_attributes>
+    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>380</y>
+      <w>320</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=menuFind()
+layer=1</panel_attributes>
+    <additional_attributes>300.0;10.0;150.0;100.0;150.0;300.0;10.0;300.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>310</y>
+      <w>150</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=keyCtrlAPressed()
+layer=1</panel_attributes>
+    <additional_attributes>100.0;190.0;100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>400</y>
+      <w>320</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=menuCsvCheck()
+layer=1</panel_attributes>
+    <additional_attributes>300.0;10.0;160.0;90.0;160.0;260.0;10.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>180</y>
+      <w>250</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=tabClosed()
+layer=1</panel_attributes>
+    <additional_attributes>10.0;10.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>160</y>
+      <w>250</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=keyOrMouseSelTab()
+layer=1</panel_attributes>
+    <additional_attributes>10.0;10.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>130</y>
+      <w>520</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=databaseInfo()
+layer=2</panel_attributes>
+    <additional_attributes>500.0;100.0;400.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>620</x>
+      <y>100</y>
+      <w>280</w>
+      <h>380</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=currentTitle()
+layer=2</panel_attributes>
+    <additional_attributes>260.0;10.0;100.0;10.0;100.0;350.0;10.0;350.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>620</x>
+      <y>310</y>
+      <w>280</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+layer=2</panel_attributes>
+    <additional_attributes>260.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>380</y>
+      <w>180</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=dbReadBranch()
+layer=2</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>250</y>
+      <w>320</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=collRemovedFromTree()
+layer=1</panel_attributes>
+    <additional_attributes>300.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>270</y>
+      <w>320</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=collRenamedInTree()
+layer=1</panel_attributes>
+    <additional_attributes>300.0;10.0;150.0;140.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>270</y>
+      <w>320</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=showDBInfo()
+layer=1</panel_attributes>
+    <additional_attributes>300.0;30.0;210.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>290</y>
+      <w>320</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=updateDB()
+layer=1</panel_attributes>
+    <additional_attributes>300.0;30.0;210.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>330</y>
+      <w>70</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+layer=1</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0;10.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>580</y>
+      <w>520</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+layer=2</panel_attributes>
+    <additional_attributes>500.0;80.0;310.0;80.0;310.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>210</y>
+      <w>320</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=currentChanged()
+layer=1</panel_attributes>
+    <additional_attributes>300.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>230</y>
+      <w>320</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=collItemActivated()
+layer=1</panel_attributes>
+    <additional_attributes>300.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>580</y>
+      <w>250</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=settingsChanged()
+layer=1</panel_attributes>
+    <additional_attributes>230.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>690</y>
+      <w>520</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=menuRename()
+layer=2</panel_attributes>
+    <additional_attributes>500.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>710</y>
+      <w>520</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=menuShowPicture()
+layer=2</panel_attributes>
+    <additional_attributes>500.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>730</y>
+      <w>520</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=menuShowSlides()
+layer=2</panel_attributes>
+    <additional_attributes>500.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>120</x>
+      <y>820</y>
+      <w>260</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Note:
+bg=yellow
+all slots "#" must filter the input signal
+with property "weAreVisible" (which
+means: exactly this tab is visible) 
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>420</y>
+      <w>320</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=menuIptcData()
+layer=1</panel_attributes>
+    <additional_attributes>300.0;10.0;170.0;80.0;170.0;220.0;10.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>490</y>
+      <w>250</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=keyCtrlAPressed()
+layer=1</panel_attributes>
+    <additional_attributes>230.0;190.0;100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>670</y>
+      <w>520</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=ctrlAKeyAction
+layer=2</panel_attributes>
+    <additional_attributes>500.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>420</y>
+      <w>250</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=branchRenamedInTree()
+layer=1</panel_attributes>
+    <additional_attributes>230.0;80.0;150.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1260</x>
+      <y>460</y>
+      <w>190</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>watchThread:
+KbvCollectionWatchThread
+--
+
+layer=2
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>740</y>
+      <w>230</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+viewModeChanged()
+layer=2</panel_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0;210.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>880</x>
+      <y>810</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>sortModel:
+KbvSortFilterModel
+
+layer=2
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>840</y>
+      <w>190</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=sortButtonClicked()
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0;170.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>820</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=sortRoleChanged()
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;10.0;190.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>620</x>
+      <y>230</y>
+      <w>140</w>
+      <h>570</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=dbReadBranch()
+layer=2</panel_attributes>
+    <additional_attributes>110.0;550.0;110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>620</x>
+      <y>370</y>
+      <w>280</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=search()
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;30.0;80.0;260.0;260.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>440</y>
+      <w>140</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=endOfReading()
+layer=2</panel_attributes>
+    <additional_attributes>120.0;10.0;30.0;20.0;30.0;120.0;120.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>770</x>
+      <y>460</y>
+      <w>130</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=endOfUpdate()
+layer=2</panel_attributes>
+    <additional_attributes>110.0;10.0;30.0;20.0;30.0;70.0;110.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>440</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=currentChanged()
+layer=2</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>490</y>
+      <w>520</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=renameDBBranch
+layer=2</panel_attributes>
+    <additional_attributes>500.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>360</y>
+      <w>160</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>collectionTreeModel:
+KbvCollectionTreeModel
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>770</y>
+      <w>180</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=dbReadBranch()
+layer=2</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

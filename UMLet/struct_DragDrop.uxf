@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>700</x>
+      <y>610</y>
+      <w>120</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+layer=2</panel_attributes>
+    <additional_attributes>100;30;80;30;50;100;30;100</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>800</x>
+      <y>670</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>collectionThread
+--
+remove()
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>920</x>
+      <y>620</y>
+      <w>70</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+layer=2</panel_attributes>
+    <additional_attributes>30;80;50;80;50;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>180</x>
+      <y>270</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+layer=2</panel_attributes>
+    <additional_attributes>30;90;120;90;140;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>920</x>
+      <y>380</y>
+      <w>130</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=.
+layer=2</panel_attributes>
+    <additional_attributes>30;30;110;40</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>550</x>
+      <y>590</y>
+      <w>180</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>collectionView
+--
+displays: db records
+target: db
+source: db records
+--
+dropEvent()
+ acceptProposedAction
+--
+mouseMoveEvent()
+ update status bar
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>550</x>
+      <y>470</y>
+      <w>180</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>searchView
+--
+displays: db records
+source: db records
+--
+mouseMoveEvent()
+ update status bar
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>380</x>
+      <y>270</y>
+      <w>190</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;
+layer=2
+</panel_attributes>
+    <additional_attributes>30;30;60;260;170;260</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>390</x>
+      <y>270</y>
+      <w>180</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;
+layer=2</panel_attributes>
+    <additional_attributes>30;30;50;130;160;130</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>700</x>
+      <y>380</y>
+      <w>120</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+layer=2</panel_attributes>
+    <additional_attributes>100;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Note</type>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>290</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>
+Overview of all drag and drop participants,
+involved objects and functions
+dndHandler = KbvCollectionDragDrop
+sender = drag start
+receiver = drop event
+Further diagrams:
+- KbvCollectionTabs_dropDataScheduler
+- KbvCollectionDragDrop_dropMimeData
+- KbvCollectionDragDrop_addToCollection
+- KbvCollectionDragDrop_addToAlbum
+Drag move from collection or search view
+must update the related model.
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>100</x>
+      <y>650</y>
+      <w>470</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;
+layer=1</panel_attributes>
+    <additional_attributes>450;140;30;140;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>180</x>
+      <y>360</y>
+      <w>390</w>
+      <h>370</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;
+layer=2</panel_attributes>
+    <additional_attributes>30;30;100;30;250;350;370;350</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>520</x>
+      <y>460</y>
+      <w>470</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>bt=.
+                     searchViewTab : kbvTabWidget
+bg=#e8e8e8
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>180</x>
+      <y>520</y>
+      <w>390</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;
+layer=2
+</panel_attributes>
+    <additional_attributes>30;140;110;140;190;30;370;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>300</x>
+      <y>250</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>bt=*
+external
+application
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>920</x>
+      <y>330</y>
+      <w>130</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=.
+layer=2</panel_attributes>
+    <additional_attributes>30;40;110;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>50</x>
+      <y>300</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>dirView
+--
+target: directory
+ 
+--
+dropEvent()
+ acceptProposedAction
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>20</x>
+      <y>250</y>
+      <w>220</w>
+      <h>450</h>
+    </coordinates>
+    <panel_attributes>bt=.
+kbvTabsLeft : QTabWidget
+layer=0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>50</x>
+      <y>580</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>collectionTreeView
+--
+target: branch or album
+ 
+--
+dropEvent()
+ acceptProposedAction
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>920</x>
+      <y>510</y>
+      <w>130</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=.
+layer=2</panel_attributes>
+    <additional_attributes>30;30;110;30</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>730</x>
+      <y>100</y>
+      <w>260</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>case 2
+Drag from search or
+collection view to dir view or
+or collection tree view or ext. app.
+Source model and database get
+updated when drop finishes
+bg=cyan
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>800</x>
+      <y>510</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>searchModel
+--
+dragMoveCleanUp()
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>180</x>
+      <y>340</y>
+      <w>390</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;
+layer=2</panel_attributes>
+    <additional_attributes>30;30;120;30;150;70;370;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>520</x>
+      <y>580</y>
+      <w>470</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>bt=.
+                  collViewTab : kbvTabWidget
+bg=#e8e8e8
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>800</x>
+      <y>610</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>collectionModel
+--
+dragMoveCleanUp()
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>700</x>
+      <y>510</y>
+      <w>120</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+layer=2</panel_attributes>
+    <additional_attributes>100;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>800</x>
+      <y>340</y>
+      <w>150</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>fileModel
+--
+dropMimeData()
+ 
+--
+dragMoveCleanUp()
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>700</x>
+      <y>340</y>
+      <w>120</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+layer=2</panel_attributes>
+    <additional_attributes>100;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>920</x>
+      <y>760</y>
+      <w>70</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+layer=1</panel_attributes>
+    <additional_attributes>30;50;50;50;50;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>520</x>
+      <y>280</y>
+      <w>470</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>bt=.
+                   fileViewTab : kbvTabWidget
+bg=#e8e8e8
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>500</x>
+      <y>250</y>
+      <w>510</w>
+      <h>600</h>
+    </coordinates>
+    <panel_attributes>bt=.
+kbvTabsRight : KbvCollectionTabs
+layer=0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Note</type>
+    <coordinates>
+      <x>1030</x>
+      <y>330</y>
+      <w>190</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Copy/move files
+- from source dir to target dir
+- update model
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>920</x>
+      <y>600</y>
+      <w>130</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=.
+layer=2</panel_attributes>
+    <additional_attributes>30;30;110;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>310</x>
+      <y>270</y>
+      <w>260</w>
+      <h>420</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+layer=2</panel_attributes>
+    <additional_attributes>240;400;110;400;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Note</type>
+    <coordinates>
+      <x>1030</x>
+      <y>400</y>
+      <w>190</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Drag move:
+- update model
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>320</x>
+      <y>270</y>
+      <w>250</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+layer=2</panel_attributes>
+    <additional_attributes>230;100;50;100;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>920</x>
+      <y>750</y>
+      <w>80</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+layer=1</panel_attributes>
+    <additional_attributes>30;80;60;80;60;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Note</type>
+    <coordinates>
+      <x>380</x>
+      <y>0</y>
+      <w>300</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>struct_DragDrop
+v1.2,  29.11.2013
+Overview of all drag and drop participants,
+involved objects and functions
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>370</x>
+      <y>270</y>
+      <w>200</w>
+      <h>450</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;
+layer=2</panel_attributes>
+    <additional_attributes>30;30;70;430;180;430</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>180</x>
+      <y>350</y>
+      <w>390</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;
+layer=2
+</panel_attributes>
+    <additional_attributes>30;30;110;30;190;190;370;190</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>550</x>
+      <y>770</y>
+      <w>180</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>
+dropDataScheduler()
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Note</type>
+    <coordinates>
+      <x>1030</x>
+      <y>520</y>
+      <w>190</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Drag move:
+- remove records from db
+- update model
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>550</x>
+      <y>290</y>
+      <w>180</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>fileView
+--
+displays: files
+target: directory
+source: directory
+--
+dropEvent()
+ acceptProposedAction
+--
+mouseMoveEvent()
+ update status bar
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>700</x>
+      <y>640</y>
+      <w>120</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+layer=2</panel_attributes>
+    <additional_attributes>100;140;80;140;50;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>180</x>
+      <y>390</y>
+      <w>390</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;
+layer=2</panel_attributes>
+    <additional_attributes>30;260;100;260;260;30;370;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Note</type>
+    <coordinates>
+      <x>1030</x>
+      <y>740</y>
+      <w>190</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Copy/move files
+- from ext. dir to target db
+- from source dir to target db
+- from source db to target db
+- from source db to target dir
+- update model
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>180</x>
+      <y>270</y>
+      <w>170</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+layer=2</panel_attributes>
+    <additional_attributes>30;370;90;370;150;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>700</x>
+      <y>760</y>
+      <w>120</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+layer=1</panel_attributes>
+    <additional_attributes>100;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>800</x>
+      <y>750</y>
+      <w>150</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>dndHandler
+--
+dropMimeData()
+ 
+--
+addToAlbum()
+--
+addToCollection()
+layer=1
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>420</x>
+      <y>100</y>
+      <w>260</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>case 1
+Drag from file view to
+dir/collection tree view or ext. app.
+Source model gets updated
+when drop finishes
+bg=cyan
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>100</x>
+      <y>350</y>
+      <w>720</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+layer=2
+</panel_attributes>
+    <additional_attributes>700;30;690;30;660;100;30;100;30;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>920</x>
+      <y>720</y>
+      <w>130</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=.
+layer=1</panel_attributes>
+    <additional_attributes>30;50;110;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>180</x>
+      <y>640</y>
+      <w>390</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;
+layer=2</panel_attributes>
+    <additional_attributes>30;30;210;30;240;80;370;80</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>770</x>
+      <y>20</y>
+      <w>100</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+layer=2
+group=1</panel_attributes>
+    <additional_attributes>30;30;80;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Text</type>
+    <coordinates>
+      <x>870</x>
+      <y>40</y>
+      <w>100</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>function call
+layer=2
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Text</type>
+    <coordinates>
+      <x>870</x>
+      <y>20</y>
+      <w>100</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>drag'N'drop
+layer=2
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>770</x>
+      <y>0</y>
+      <w>100</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+layer=2
+group=1</panel_attributes>
+    <additional_attributes>30;30;80;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Note</type>
+    <coordinates>
+      <x>780</x>
+      <y>0</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Legend:
+layer=1
+bg=#e0e0e0
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Note</type>
+    <coordinates>
+      <x>1030</x>
+      <y>610</y>
+      <w>190</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Drag move:
+- remove records from db
+- update model
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
