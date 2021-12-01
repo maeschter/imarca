@@ -11,5 +11,6 @@ kbvMetadata.pro.*
 kbvMetadata/prd/**
 kbvTranslation/i18n/**
 kbvHelp/gen/**
+libDynPlugin/prd/**
 package/imarca/**
 test/**
